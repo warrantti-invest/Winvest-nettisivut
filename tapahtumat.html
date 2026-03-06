@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tapahtumat — Winvest</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" class="nav-logo-img" />
+      <span>Warrantti Investment Club</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="hallitukset.html">Hallitukset</a></li>
+      <li><a href="kuvapankki.html">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" class="active">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html">Opinnot</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/dinner2025.jpg'); background-size: cover; background-position: center 30%;"></div>
+    <div class="page-hero-content">
+      <div class="page-title">Tapahtumat</div>
+      <div class="page-subtitle">Winvestin tulevat ja menneet tapahtumat</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="tapahtumat-section fade-in">
+
+    <div class="tapahtumat-intro">
+      <p>Winvest järjestää monipuolisia tapahtumia jäsenilleen — excursioista yritysvierailuihin, sijoitusiltamista vuosijuhliin. Täältä löydät tulevat tapahtumat sekä katsauksen menneisiin.</p>
+    </div>
+
+    <h2 class="tapahtumat-heading">Tulevat tapahtumat</h2>
+
+    <div class="tapahtumat-grid">
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">TBA</span>
+          <h3>Lisää tapahtumia tulossa</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>Seuraa somejamme ja Telegram-ryhmää pysyäksesi ajan tasalla tulevista tapahtumista!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="tapahtumat-heading">Menneet tapahtumat</h2>
+
+    <div class="tapahtumat-grid">
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2026</span>
+          <h3>Naistenpäivä x VES</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2026</span>
+          <h3>Rookie Dinner 2026</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/slush.jpg" alt="Slush 2025" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Slush 2025</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/dinner2025.jpg" alt="Vuosijuhla 2025" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Vuosijuhla 2025</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Winvest Info Ilta</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Rookie Dinner 2025</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Excu%20poster%203.4-4.4.25.png" alt="Finance as Career Excursio" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Finance as Career Excursio</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Naistenpv24.png" alt="Naisten päivä x VES" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Naisten päivä x VES</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Excu%20poster%2025.02..25.png" alt="Excursio 25.2.2025" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Excursio</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Vaasa%20Excu.png" alt="Excursio — Vaasa" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Excursio — Vaasa</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Kylterij%C3%A4iset.png" alt="Kylterijäiset" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Kylterijäiset</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Sijoitus%20messut.png" alt="Sijoitusmessut" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Sijoitusmessut</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Institutional%20trading%20and%20markets.png" alt="Institutional Trading and Markets" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Institutional Trading and Markets</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Finance%20as%20a%20career%20.png" alt="Finance as a Career" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Finance as a Career</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Excu%2017.4.18.4.png" alt="Excursio 17.4.–18.4." class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2025</span>
+          <h3>Excursio</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Excu1.11.2024.png" alt="Winvest Excursio 1.11.2024" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2024</span>
+          <h3>Winvest Excursio</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2024</span>
+          <h3>Winvest Excursio</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <img src="assets/Tapahtumat/Naistenpv.2024png.png" alt="Naistenpäivä 2024" class="tapahtuma-tile-img" />
+        <div class="tapahtuma-tile-header">
+          <span class="tapahtuma-tile-date">2024</span>
+          <h3>Naistenpäivä 2024</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <h3>Fireside Chat — Coinmotion</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
+        <div class="tapahtuma-tile-visual"></div>
+        <div class="tapahtuma-tile-header">
+          <h3>Fireside Chat — Asuntosijoittaminen</h3>
+          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="tapahtuma-tile-body">
+          <p>testi 1</p>
+          <p>testi 2</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" />
+      <span>Winvest</span>
+    </div>
+    <div class="footer-social">
+      <div class="footer-social-icons">
+        <a href="https://www.instagram.com/warrantti_invest/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.linkedin.com/company/warrantti-invest/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><path d="M12 16v-5m0 0c0-1.5 4-1.5 4 0v5"/></svg></a>
+        <a href="https://www.tiktok.com/@warrantti.invest" target="_blank" rel="noopener" aria-label="TikTok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M10 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+      </div>
+      <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
+    </div>
+    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
