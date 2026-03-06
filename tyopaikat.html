@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avoimet työpaikat — Winvest</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" class="nav-logo-img" />
+      <span>Warrantti Investment Club</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="hallitukset.html">Hallitukset</a></li>
+      <li><a href="kuvapankki.html">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" class="active">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html">Kumppanit</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Ban-BLOG%20-%20Trois-evenements-nordiques-incontournables-Jura.jpg.webp'); background-size: cover; background-position: center 30%;"></div>
+    <div class="page-hero-content">
+      <div class="page-title">Avoimet työpaikat</div>
+      <div class="page-subtitle">Mahdollisuudet rahoitusalalla</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="jobs-section fade-in">
+
+    <div class="jobs-intro">
+      <p>Winvest kerää jäsenilleen avoimia harjoittelu- ja työpaikkoja rahoitus- ja sijoitusalalta. Tällä hetkellä ei ole avoimia paikkoja — tarkista myöhemmin uudelleen.</p>
+    </div>
+
+    <!-- Tyhjä tila — lisää kortit alle kun paikkoja avautuu -->
+    <div class="jobs-grid">
+
+      <div class="jobs-empty fade-in">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 1 4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        <span>Ei avoimia paikkoja tällä hetkellä</span>
+        <span class="jobs-empty-sub">Seuraa somekanaviamme — ilmoitamme uusista paikoista siellä ensimmäisenä</span>
+      </div>
+
+    </div>
+
+    <!-- Malli avoimesta paikasta — poista kommentit kun lisäät oikean paikan
+    <div class="job-card fade-in">
+      <div class="job-header">
+        <div class="job-company">Yritys Oy</div>
+        <div class="job-type">Harjoittelu</div>
+      </div>
+      <div class="job-title">Analyytikkoharjoittelija</div>
+      <div class="job-meta">
+        <span>Helsinki</span>
+        <span>·</span>
+        <span>Kesä 2026</span>
+      </div>
+      <div class="job-desc">Lyhyt kuvaus tehtävästä ja vaatimuksista.</div>
+      <a href="#" class="btn-gold" target="_blank" rel="noopener">Hae paikkaa</a>
+    </div>
+    -->
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" />
+      <span>Winvest</span>
+    </div>
+    <div class="footer-social">
+      <div class="footer-social-icons">
+        <a href="https://www.instagram.com/warrantti_invest/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.linkedin.com/company/warrantti-invest/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><path d="M12 16v-5m0 0c0-1.5 4-1.5 4 0v5"/></svg></a>
+        <a href="https://www.tiktok.com/@warrantti.invest" target="_blank" rel="noopener" aria-label="TikTok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M10 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+      </div>
+      <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
+    </div>
+    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

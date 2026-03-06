@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuvapankki — Winvest</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5,5,40,0.95);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 2px;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem; right: 2rem;
+      font-size: 2rem;
+      color: var(--gray);
+      cursor: pointer;
+      background: none;
+      border: none;
+      transition: color 0.2s;
+    }
+    .lightbox-close:hover { color: var(--gold); }
+    .lightbox-caption {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" class="nav-logo-img" />
+      <span>Warrantti Investment Club</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="hallitukset.html">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" class="active">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html">Kumppanit</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Ban-BLOG%20-%20Trois-evenements-nordiques-incontournables-Jura.jpg.webp'); background-size: cover; background-position: center 30%;"></div>
+    <div class="page-hero-content">
+      <div class="page-title">Kuvapankki</div>
+      <div class="page-subtitle">Tapahtumat & muistot</div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery-section">
+
+    <!-- Filters -->
+    <div class="gallery-filter fade-in">
+      <button class="filter-btn active" data-filter="all">Kaikki</button>
+      <button class="filter-btn" data-filter="excursio">Excursiot</button>
+      <button class="filter-btn" data-filter="gaala">Gaalat</button>
+      <button class="filter-btn" data-filter="hallitus">Hallitus</button>
+      <button class="filter-btn" data-filter="tapahtuma">Tapahtumat</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="gallery-grid fade-in">
+
+      <div class="gallery-item" data-category="hallitus" onclick="openLightbox('assets/hallitus-2025/kuva-hallitus2025.jpg', 'Winvest Hallitus 2025')">
+        <img src="assets/hallitus-2025/kuva-hallitus2025.jpg" alt="Hallitus 2025" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Hallitus 2025</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/excursio-aktia.jpg', 'Excursio — Aktia')">
+        <img src="assets/Tapahtumat/excursio-aktia.jpg" alt="Excursio Aktia" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Excursio — Aktia</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Excu_Suomenpankki.jpg', 'Excursio — Suomen Pankki')">
+        <img src="assets/Tapahtumat/Excu_Suomenpankki.jpg" alt="Excursio Suomen Pankki" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Excursio — Suomen Pankki</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Slush.JPEG', 'Slush')">
+        <img src="assets/Tapahtumat/Slush.JPEG" alt="Slush" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Slush</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="gaala" onclick="openLightbox('assets/Tapahtumat/Dinner2025.JPEG', 'Dinner 2025')">
+        <img src="assets/Tapahtumat/Dinner2025.JPEG" alt="Dinner 2025" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Dinner 2025</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="tapahtuma" onclick="openLightbox('assets/Tapahtumat/Naisten_pv_2025.jpg', 'Naistenpäivä 2025')">
+        <img src="assets/Tapahtumat/Naisten_pv_2025.jpg" alt="Naistenpäivä 2025" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Naistenpäivä 2025</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="tapahtuma" onclick="openLightbox('assets/Tapahtumat/IMG_0709.JPG', 'Tapahtuma')">
+        <img src="assets/Tapahtumat/IMG_0709.JPG" alt="Tapahtuma" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Tapahtuma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/svg/logo.svg" alt="Winvest" />
+      <span>Winvest</span>
+    </div>
+    <div class="footer-social">
+      <div class="footer-social-icons">
+        <a href="https://www.instagram.com/warrantti_invest/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.linkedin.com/company/warrantti-invest/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><path d="M12 16v-5m0 0c0-1.5 4-1.5 4 0v5"/></svg></a>
+        <a href="https://www.tiktok.com/@warrantti.invest" target="_blank" rel="noopener" aria-label="TikTok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M10 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+      </div>
+      <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
+    </div>
+    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+  </footer>
+
+  <script>
+    // Fade in observer
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.gallery-item[data-category]').forEach(item => {
+          item.style.opacity = (f === 'all' || item.dataset.category === f) ? '1' : '0.25';
+        });
+      });
+    });
+
+    // Lightbox
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (!e || e.target !== document.getElementById('lightbox-img')) {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>

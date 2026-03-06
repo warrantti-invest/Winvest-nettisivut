@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a8c"/>
+      <stop offset="100%" stop-color="#00008b"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="300" r="300" fill="url(#bgGrad)"/>
+  <text
+    x="300"
+    y="390"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="260"
+    font-weight="normal"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="8"
+  >WI</text>
+</svg>
