@@ -29,7 +29,7 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/dinner2025.jpg'); background-size: cover; background-position: center 30%;"></div>
+    <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
       <div class="page-title">Tapahtumat</div>
       <div class="page-subtitle">Winvestin tulevat ja menneet tapahtumat</div>
@@ -45,16 +45,18 @@
 
     <h2 class="tapahtumat-heading">Tulevat tapahtumat</h2>
 
-    <div class="tapahtumat-grid">
+    <div class="timeline">
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">TBA</span>
-          <h3>Lisää tapahtumia tulossa</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>Seuraa somejamme ja Telegram-ryhmää pysyäksesi ajan tasalla tulevista tapahtumista!</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Excursio — Mandatum & Danske Bank</h3>
+            <span class="timeline-badge">9.4.2026</span>
+            <p>Vierailu Helsingissä kahteen keskeiseen rahoitusalan toimijaan. Mandatumilla käsitellään markkinanäkymiä sekä sijoitustuotteita (strukturoidut, korko ja vaihtoehtoiset sijoitukset).</p>
+            <p>Iltapäivällä Danske Bankilla tutustumme pankin Markets-toimintoihin, kuten Trade Financeen, Foreign Exchangeen, Equity Researchiin, Debt Capital Marketsiin sekä Corporate Lendingiin. Ohjelmaan kuuluu myös Markets-vierailu ja alumni-uratarinoita.</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Excursio — Mandatum & Danske Bank" class="timeline-img" />
         </div>
       </div>
 
@@ -62,263 +64,248 @@
 
     <h2 class="tapahtumat-heading">Menneet tapahtumat</h2>
 
-    <div class="tapahtumat-grid">
+    <div class="timeline">
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2026</span>
-          <h3>Naistenpäivä x VES</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <!-- 2026 -->
+      <div class="timeline-year">2026</div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Naistenpäivä x VES</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2026</span>
-          <h3>Rookie Dinner 2026</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/slush.jpg" alt="Slush 2025" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Slush 2025</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Rookie Dinner 2026</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Rookiedinner26jpg.jpg" alt="Rookie Dinner 2026" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/dinner2025.jpg" alt="Vuosijuhla 2025" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Vuosijuhla 2025</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <!-- 2025 -->
+      <div class="timeline-year">2025</div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Slush</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/slush.jpg" alt="Slush 2025" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Winvest Info Ilta</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Rookie Dinner 2025</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Vuosijuhla</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/dinner2025.jpg" alt="Vuosijuhla 2025" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Excu%20poster%203.4-4.4.25.png" alt="Finance as Career Excursio" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Finance as Career Excursio</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Winvest Info Ilta</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Naistenpv24.png" alt="Naisten päivä x VES" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Naisten päivä x VES</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Rookie Dinner</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Excu%20poster%2025.02..25.png" alt="Excursio 25.2.2025" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Excursio</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Vaasa%20Excu.png" alt="Excursio — Vaasa" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Excursio — Vaasa</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Finance as Career Excursio</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Finance as Career Excursio" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Kylterij%C3%A4iset.png" alt="Kylterijäiset" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Kylterijäiset</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Sijoitus%20messut.png" alt="Sijoitusmessut" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Sijoitusmessut</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Naisten päivä x VES</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Naistenpv24.png" alt="Naisten päivä x VES" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Institutional%20trading%20and%20markets.png" alt="Institutional Trading and Markets" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Institutional Trading and Markets</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Finance%20as%20a%20career%20.png" alt="Finance as a Career" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Finance as a Career</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Excursio</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Excursio 25.2.2025" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Excu%2017.4.18.4.png" alt="Excursio 17.4.–18.4." class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2025</span>
-          <h3>Excursio</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Excu1.11.2024.png" alt="Winvest Excursio 1.11.2024" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2024</span>
-          <h3>Winvest Excursio</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Excursio — Vaasa</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Vaasa%20Excu.png" alt="Excursio — Vaasa" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2024</span>
-          <h3>Winvest Excursio</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
-        </div>
-      </div>
-
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <img src="assets/Tapahtumat/Naistenpv.2024png.png" alt="Naistenpäivä 2024" class="tapahtuma-tile-img" />
-        <div class="tapahtuma-tile-header">
-          <span class="tapahtuma-tile-date">2024</span>
-          <h3>Naistenpäivä 2024</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Kylterijäiset</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Kylterij%C3%A4iset.png" alt="Kylterijäiset" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <h3>Fireside Chat — Coinmotion</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Sijoitusmessut, Helsinki</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Sijoitusmessut, Helsinki" class="timeline-img" />
         </div>
       </div>
 
-      <div class="tapahtuma-tile" onclick="this.classList.toggle('open')">
-        <div class="tapahtuma-tile-visual"></div>
-        <div class="tapahtuma-tile-header">
-          <h3>Fireside Chat — Asuntosijoittaminen</h3>
-          <svg class="tapahtuma-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Institutional Trading and Markets</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Institutional%20trading%20and%20markets.png" alt="Institutional Trading and Markets" class="timeline-img" />
         </div>
-        <div class="tapahtuma-tile-body">
-          <p>testi 1</p>
-          <p>testi 2</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Finance as a Career</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Finance%20as%20a%20career%20.png" alt="Finance as a Career" class="timeline-img" />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Excursio</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Excursio 17.4.–18.4." class="timeline-img" />
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="timeline-year">2024</div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Winvest Excursio</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.avif" alt="Winvest Excursio 1.11.2024" class="timeline-img" />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Winvest Excursio</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Naistenpäivä</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+          <img src="assets/Tapahtumat/Naistenpv.2024png.png" alt="Naistenpäivä 2024" class="timeline-img" />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Fireside Chat — Coinmotion</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Fireside Chat — Asuntosijoittaminen</h3>
+            <p>testi 1</p>
+            <p>testi 2</p>
+          </div>
         </div>
       </div>
 
