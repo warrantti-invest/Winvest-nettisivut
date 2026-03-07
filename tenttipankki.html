@@ -13,7 +13,7 @@
   <nav>
     <a href="index.html" class="nav-logo">
       <img src="assets/svg/logo.svg" alt="Winvest" class="nav-logo-img" />
-      <span>Warrantti Investment Club</span>
+      <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Etusivu</a></li>
@@ -43,119 +43,128 @@
       <p>Tervetuloa Winvestin tenttipankkiin! Täältä löydät vanhoja tenttejä, malleja harkkatöihin ja opiskelumateriaalia kauppatieteiden opintoihin. Materiaalit on jaoteltu kursseittain.</p>
     </div>
 
-    <div class="tentti-grid">
+    <div class="tentti-subjects">
 
-      <div class="tentti-course">
-        <div class="tentti-course-header">
+      <!-- LASKENTATOIMI -->
+      <div class="tentti-subject">
+        <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h3>Laskentatoimi</h3>
+          <h2>Laskentatoimi</h2>
         </div>
-        <ul class="tentti-list">
-          <li class="tentti-placeholder">Tenttejä ja harkkatyömalleja lisätään pian</li>
-        </ul>
+        <p class="tentti-placeholder">Kursseja ja tenttejä lisätään pian</p>
       </div>
 
-      <div class="tentti-course">
-        <div class="tentti-course-header">
+      <!-- RAHOITUS -->
+      <div class="tentti-subject">
+        <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h3>Rahoitus</h3>
+          <h2>Rahoitus</h2>
         </div>
 
-        <div class="tentti-exam" onclick="this.classList.toggle('open')">
-          <div class="tentti-exam-header">
-            <span>LASK2003 Johdannaiset — 23.1.2026</span>
-            <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        <div class="tentti-course-dropdown" onclick="this.classList.toggle('open')">
+          <div class="tentti-course-dropdown-header">
+            <h3>LASK2003 Johdannaiset</h3>
+            <svg class="tentti-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </div>
-          <div class="tentti-exam-body">
-            <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
+          <div class="tentti-course-dropdown-body">
 
-            <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti, mitä implisiittinen volatiliteetti tarkoittaa ja miten se voidaan laskea. (6p)</div>
+            <div class="tentti-exam" onclick="event.stopPropagation(); this.classList.toggle('open')">
+              <div class="tentti-exam-header">
+                <span>LASK2003 Johdannaiset — 23.1.2026</span>
+                <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="tentti-exam-body">
+                <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
 
-            <div class="tentti-q"><strong>2.</strong> Eurooppalaisen osto-option hinta on 0,13 €. Optio erääntyy kolmen kuukauden kuluttua ja sen toteutushinta on 2,40 €. Option kohde-etuuden hinta on tällä hetkellä 2,30 € ja riskitön korko 1,95 %. Kohde-etuudesta irtoaa 0,20 € osinko kuuden kuukauden kuluttua. Volatiliteetti on 27,8 %. Laske osto-option aika-arvo. (6p)</div>
+                <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti, mitä implisiittinen volatiliteetti tarkoittaa ja miten se voidaan laskea. (6p)</div>
 
-            <div class="tentti-q"><strong>3.</strong> Asetat osto-option kohde-etuuteen S toteutushinnalla K₁ ja asetat toisen osto-option toteutushinnalla K₃. Lisäksi ostat kaksi osto-optiota toteutushinnalla K₂. Kaikki neljä optiota erääntyvät ajan T kuluttua ja K₁ &lt; K₂ &lt; K₃.
-              <br><br>Piirrä strategian tuottokuvaaja ja esitä strategia vektorinotaatiolla. Milloin tätä strategiaa kannattaa käyttää?
-              <br><br>Esitä strategian voitto/tappio tilanteissa:
-              <br>a) S_T &lt; K₁
-              <br>b) K₁ &lt; S_T &lt; K₂
-              <br>c) K₂ &lt; S_T &lt; K₃
-              <br>d) S_T &gt; K₃ (6p)</div>
+                <div class="tentti-q"><strong>2.</strong> Eurooppalaisen osto-option hinta on 0,13 €. Optio erääntyy kolmen kuukauden kuluttua ja sen toteutushinta on 2,40 €. Option kohde-etuuden hinta on tällä hetkellä 2,30 € ja riskitön korko 1,95 %. Kohde-etuudesta irtoaa 0,20 € osinko kuuden kuukauden kuluttua. Volatiliteetti on 27,8 %. Laske osto-option aika-arvo. (6p)</div>
 
-            <div class="tentti-q"><strong>4.</strong> Johda alaraja eurooppalaisen osto-option hinnalle seuraavia portfolioita käyttäen:
-              <br><br>Portfolio 1: osto-optio + toteutushinnan nykyarvo Ke⁻ʳᵀ
-              <br>Portfolio 2: kohde-etuus S₀ (6p)</div>
-          </div>
-        </div>
+                <div class="tentti-q"><strong>3.</strong> Asetat osto-option kohde-etuuteen S toteutushinnalla K₁ ja asetat toisen osto-option toteutushinnalla K₃. Lisäksi ostat kaksi osto-optiota toteutushinnalla K₂. Kaikki neljä optiota erääntyvät ajan T kuluttua ja K₁ &lt; K₂ &lt; K₃.
+                  <br><br>Piirrä strategian tuottokuvaaja ja esitä strategia vektorinotaatiolla. Milloin tätä strategiaa kannattaa käyttää?
+                  <br><br>Esitä strategian voitto/tappio tilanteissa:
+                  <br>a) S_T &lt; K₁
+                  <br>b) K₁ &lt; S_T &lt; K₂
+                  <br>c) K₂ &lt; S_T &lt; K₃
+                  <br>d) S_T &gt; K₃ (6p)</div>
 
-        <div class="tentti-exam" onclick="this.classList.toggle('open')">
-          <div class="tentti-exam-header">
-            <span>LASK2003 Johdannaiset — 17.10.2025</span>
-            <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-          <div class="tentti-exam-body">
-            <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
+                <div class="tentti-q"><strong>4.</strong> Johda alaraja eurooppalaisen osto-option hinnalle seuraavia portfolioita käyttäen:
+                  <br><br>Portfolio 1: osto-optio + toteutushinnan nykyarvo Ke⁻ʳᵀ
+                  <br>Portfolio 2: kohde-etuus S₀ (6p)</div>
+              </div>
+            </div>
 
-            <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti seuraavat käsitteet ja lyhenteet (6p)
-              <br>a) Credit default swap (CDS)
-              <br>b) Put-call -pariteetti
-              <br>c) Implisiittinen volatiliteetti</div>
+            <div class="tentti-exam" onclick="event.stopPropagation(); this.classList.toggle('open')">
+              <div class="tentti-exam-header">
+                <span>LASK2003 Johdannaiset — 12.12.2025</span>
+                <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="tentti-exam-body">
+                <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
 
-            <div class="tentti-q"><strong>2.</strong> Lypsylehmän tämänhetkinen markkinahinta on 1000 €. Lehmä tuottaa maitoa noin 8000 litraa vuodessa ja maidosta saatava hinta on 0,30 €/litra. Lehmän ylläpidosta aiheutuvat kustannukset ovat noin 2000 €/vuosi. Arvioit riskittömän koron olevan 2,10 %. Mikä on mielestäsi sopiva futuurihinta lehmän ostamiseksi 6 kuukauden kuluttua? (6p)</div>
+                <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti, mitä implisiittinen volatiliteetti tarkoittaa ja miten se voidaan laskea. (6p)</div>
 
-            <div class="tentti-q"><strong>3.</strong> Eurooppalaisen osto-option markkinahinta kohde-etuuteen S toteutushinnalla 30 € on 3 € ja eurooppalaisen myyntioption markkinahinta samaan kohde-etuuteen samalla toteutushinnalla on 2,25 €. Molempien optioiden maturiteetti on kolme kuukautta ja kohde-etuudesta ei irtoa osinkoja tai muuta tuloa optioiden voimassaoloaikana. Kohde-etuuden S markkinahinta on 31 € ja riskitön korkokanta on 2 %. Onko markkinoilla arbitraasimahdollisuus? Mitä tekisit? (6p)</div>
+                <div class="tentti-q"><strong>2.</strong> Finnair Oyj tietää tarvitsevansa miljoona gallonaa kerosiinia kolmen kuukauden kuluttua ja haluaa suojautua mahdollista hinnannousua vastaan. Kerosiinin hinnanmuutosten keskihajonta on 0,032. Finnair päättää suojautua ostamalla raakaöljyfutuureita, joiden futuurihinnan keskihajonta on 0,04. Korrelaatiokerroin futuurin ja kerosiinin hinnanmuutosten välillä on 0,8.
+                  <br><br>Laske optimaalinen suojauskerroin. Jos raakaöljyfutuurin sopimuskoko on 42 000 gallonaa, montako futuurisopimusta suojaus vaatii? (6p)</div>
 
-            <div class="tentti-q"><strong>4.</strong> Asetat myyntioption kohde-etuuteen S toteutushinnalla K₁ ja ostat kaksi osto-optiota samaan kohde-etuuteen toteutushinnalla K₂. Piirrä strategian tuottokuvaaja ja selitä milloin strategiaa kannattaa käyttää. (6p)</div>
-          </div>
-        </div>
+                <div class="tentti-q"><strong>3.</strong> Miten voisit osakeoptioita käyttämällä rakentaa tuotteen, joka vastaa tuottorakenteeltaan ostettua osakefutuuria tietyllä toimitushinnalla ja toimituspäivällä? (6p)</div>
 
-        <div class="tentti-exam" onclick="this.classList.toggle('open')">
-          <div class="tentti-exam-header">
-            <span>LASK2003 Johdannaiset — 25.10.2024</span>
-            <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-          <div class="tentti-exam-body">
-            <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
+                <div class="tentti-q"><strong>4.</strong> Pankit ja varainhoitajat markkinoivat pääomaturvattuja osakeobligaatioita. Miten voisit itse rakentaa vastaavan tuotteen johdannaisilla? (6p)</div>
+              </div>
+            </div>
 
-            <div class="tentti-q"><strong>1.</strong> Selitä seuraava kaava lyhyesti sanallisesti: dS = μS dt + σS dw
-              <br><br>Mitä kaava kuvaa ja miten se liittyy optioiden hinnoitteluun? Mikä on kaavan kahden komponentin μSdt ja σSdw merkitys? (6p)</div>
+            <div class="tentti-exam" onclick="event.stopPropagation(); this.classList.toggle('open')">
+              <div class="tentti-exam-header">
+                <span>LASK2003 Johdannaiset — 17.10.2025</span>
+                <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="tentti-exam-body">
+                <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
 
-            <div class="tentti-q"><strong>2.</strong> Oheisessa todennäköisyysjakaumassa on esitetty erään osakkeen mahdolliset hinnat kolmen kuukauden kuluttua. Hinnoittele jakauman avulla at-the-money optio, joka erääntyy kolmen kuukauden kuluttua. Osakkeen markkinahinta on 15,50 € ja riskitön korkokanta 3,00 %. Oletat volatiliteetin olevan 25,10 %. Osakkeesta ei irtoa osinkoja option voimassaoloaikana. (6p)</div>
+                <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti seuraavat käsitteet ja lyhenteet (6p)
+                  <br>a) Credit default swap (CDS)
+                  <br>b) Put-call -pariteetti
+                  <br>c) Implisiittinen volatiliteetti</div>
 
-            <div class="tentti-q"><strong>3.</strong> Muodosta myyty straddle (short straddle). Piirrä strategian kuvaaja ja esitä strategia myös vektorinotaatiota käyttäen. Milloin sijoittajan kannattaa käyttää tätä strategiaa? (6p)</div>
+                <div class="tentti-q"><strong>2.</strong> Lypsylehmän tämänhetkinen markkinahinta on 1000 €. Lehmä tuottaa maitoa noin 8000 litraa vuodessa ja maidosta saatava hinta on 0,30 €/litra. Lehmän ylläpidosta aiheutuvat kustannukset ovat noin 2000 €/vuosi. Arvioit riskittömän koron olevan 2,10 %. Mikä on mielestäsi sopiva futuurihinta lehmän ostamiseksi 6 kuukauden kuluttua? (6p)</div>
 
-            <div class="tentti-q"><strong>4.</strong> Pankit ja varainhoitajat markkinoivat strukturoituja sijoitustuotteita, joissa sijoitettu pääoma on turvattu ja tuotto sidottu osakemarkkinoiden kehitykseen (pääomaturvatut osakeobligaatiot). Selitä huolellisesti, miten voisit itse rakentaa vastaavan tuotteen. (6p)</div>
-          </div>
-        </div>
+                <div class="tentti-q"><strong>3.</strong> Eurooppalaisen osto-option markkinahinta kohde-etuuteen S toteutushinnalla 30 € on 3 € ja eurooppalaisen myyntioption markkinahinta samaan kohde-etuuteen samalla toteutushinnalla on 2,25 €. Molempien optioiden maturiteetti on kolme kuukautta ja kohde-etuudesta ei irtoa osinkoja tai muuta tuloa optioiden voimassaoloaikana. Kohde-etuuden S markkinahinta on 31 € ja riskitön korkokanta on 2 %. Onko markkinoilla arbitraasimahdollisuus? Mitä tekisit? (6p)</div>
 
-        <div class="tentti-exam" onclick="this.classList.toggle('open')">
-          <div class="tentti-exam-header">
-            <span>LASK2003 Johdannaiset — 12.12.2025</span>
-            <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-          <div class="tentti-exam-body">
-            <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
+                <div class="tentti-q"><strong>4.</strong> Asetat myyntioption kohde-etuuteen S toteutushinnalla K₁ ja ostat kaksi osto-optiota samaan kohde-etuuteen toteutushinnalla K₂. Piirrä strategian tuottokuvaaja ja selitä milloin strategiaa kannattaa käyttää. (6p)</div>
+              </div>
+            </div>
 
-            <div class="tentti-q"><strong>1.</strong> Selitä lyhyesti, mitä implisiittinen volatiliteetti tarkoittaa ja miten se voidaan laskea. (6p)</div>
+            <div class="tentti-exam" onclick="event.stopPropagation(); this.classList.toggle('open')">
+              <div class="tentti-exam-header">
+                <span>LASK2003 Johdannaiset — 25.10.2024</span>
+                <svg class="tentti-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="tentti-exam-body">
+                <p class="tentti-meta">Sami Vahamaa · Tentissä saa olla mukana ainoastaan laskin (ei taulukkokirjoja tai muuta materiaalia)</p>
 
-            <div class="tentti-q"><strong>2.</strong> Finnair Oyj tietää tarvitsevansa miljoona gallonaa kerosiinia kolmen kuukauden kuluttua ja haluaa suojautua mahdollista hinnannousua vastaan. Kerosiinin hinnanmuutosten keskihajonta on 0,032. Finnair päättää suojautua ostamalla raakaöljyfutuureita, joiden futuurihinnan keskihajonta on 0,04. Korrelaatiokerroin futuurin ja kerosiinin hinnanmuutosten välillä on 0,8.
-              <br><br>Laske optimaalinen suojauskerroin. Jos raakaöljyfutuurin sopimuskoko on 42 000 gallonaa, montako futuurisopimusta suojaus vaatii? (6p)</div>
+                <div class="tentti-q"><strong>1.</strong> Selitä seuraava kaava lyhyesti sanallisesti: dS = μS dt + σS dw
+                  <br><br>Mitä kaava kuvaa ja miten se liittyy optioiden hinnoitteluun? Mikä on kaavan kahden komponentin μSdt ja σSdw merkitys? (6p)</div>
 
-            <div class="tentti-q"><strong>3.</strong> Miten voisit osakeoptioita käyttämällä rakentaa tuotteen, joka vastaa tuottorakenteeltaan ostettua osakefutuuria tietyllä toimitushinnalla ja toimituspäivällä? (6p)</div>
+                <div class="tentti-q"><strong>2.</strong> Oheisessa todennäköisyysjakaumassa on esitetty erään osakkeen mahdolliset hinnat kolmen kuukauden kuluttua. Hinnoittele jakauman avulla at-the-money optio, joka erääntyy kolmen kuukauden kuluttua. Osakkeen markkinahinta on 15,50 € ja riskitön korkokanta 3,00 %. Oletat volatiliteetin olevan 25,10 %. Osakkeesta ei irtoa osinkoja option voimassaoloaikana. (6p)</div>
 
-            <div class="tentti-q"><strong>4.</strong> Pankit ja varainhoitajat markkinoivat pääomaturvattuja osakeobligaatioita. Miten voisit itse rakentaa vastaavan tuotteen johdannaisilla? (6p)</div>
+                <div class="tentti-q"><strong>3.</strong> Muodosta myyty straddle (short straddle). Piirrä strategian kuvaaja ja esitä strategia myös vektorinotaatiota käyttäen. Milloin sijoittajan kannattaa käyttää tätä strategiaa? (6p)</div>
+
+                <div class="tentti-q"><strong>4.</strong> Pankit ja varainhoitajat markkinoivat strukturoituja sijoitustuotteita, joissa sijoitettu pääoma on turvattu ja tuotto sidottu osakemarkkinoiden kehitykseen (pääomaturvatut osakeobligaatiot). Selitä huolellisesti, miten voisit itse rakentaa vastaavan tuotteen. (6p)</div>
+              </div>
+            </div>
+
           </div>
         </div>
 
       </div>
 
-      <div class="tentti-course">
-        <div class="tentti-course-header">
+      <!-- TALOUSTIEDE -->
+      <div class="tentti-subject">
+        <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h3>Taloustiede</h3>
+          <h2>Taloustiede</h2>
         </div>
-        <ul class="tentti-list">
-          <li class="tentti-placeholder">Tenttejä lisätään pian</li>
-        </ul>
+        <p class="tentti-placeholder">Kursseja ja tenttejä lisätään pian</p>
       </div>
 
     </div>

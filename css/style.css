@@ -16,6 +16,10 @@
 
 html { scroll-behavior: smooth; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
 body {
   background: #f0f2f8;
   color: #3a3a5a;
@@ -77,6 +81,12 @@ nav {
   color: var(--white-pure);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.nav-logo .initial {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: normal;
 }
 
 .nav-links {
@@ -1064,12 +1074,17 @@ nav {
 }
 
 .cta-person .member-photo {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .cta-person .member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
 }
 
@@ -1314,6 +1329,83 @@ footer {
   gap: 1.5rem;
 }
 
+/* Subject-based layout */
+.tentti-subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tentti-subject {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(8, 8, 73, 0.1);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.tentti-subject-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.tentti-subject-header h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+}
+
+.tentti-course-dropdown {
+  background: rgba(8, 8, 73, 0.03);
+  border: 1px solid rgba(8, 8, 73, 0.08);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  overflow: hidden;
+}
+
+.tentti-course-dropdown:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+}
+
+.tentti-course-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+}
+
+.tentti-course-dropdown-header h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+}
+
+.tentti-course-dropdown .tentti-chevron {
+  transition: transform 0.3s;
+}
+
+.tentti-course-dropdown.open > .tentti-course-dropdown-header .tentti-chevron {
+  transform: rotate(180deg);
+}
+
+.tentti-course-dropdown-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 1rem;
+}
+
+.tentti-course-dropdown.open > .tentti-course-dropdown-body {
+  max-height: 5000px;
+  padding: 0 1rem 1rem;
+}
+
 .tentti-course {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(8, 8, 73, 0.1);
@@ -1534,7 +1626,7 @@ footer {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .timeline-dot {
@@ -1577,10 +1669,12 @@ footer {
 
 .timeline-text h3 {
   font-family: 'League Spartan', sans-serif;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 500;
   color: var(--navy);
   margin: 0 0 0.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #d8d8e0;
 }
 
 .timeline-text p {
@@ -1588,6 +1682,17 @@ footer {
   color: #4a4a6a;
   line-height: 1.6;
   margin: 0.2rem 0;
+}
+
+.timeline-text h4 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0.8rem 0 0.15rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid var(--gold);
+  letter-spacing: 0.02em;
 }
 
 .timeline-badge {
@@ -1604,11 +1709,14 @@ footer {
 
 .timeline-img {
   width: 40%;
-  max-width: 360px;
-  height: 200px;
+  max-width: 400px;
+  height: 240px;
   border-radius: 4px;
   flex-shrink: 0;
   object-fit: cover;
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+  backface-visibility: hidden;
 }
 
 /* --- RESPONSIVE --- */
