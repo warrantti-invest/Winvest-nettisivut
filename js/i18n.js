@@ -38,6 +38,13 @@
     'about.p2': { fi: 'Järjestämme excursioita johtaviin finanssialan yrityksiin, luentoja asiantuntijoilta sekä kerhon sisäisiä sijoituskilpailuja. Kerho on avoin kaikille opiskelijoille taustasta riippumatta.', en: 'We organize excursions to leading financial firms, lectures from industry experts, and internal investment competitions. The club is open to all students regardless of their background.' },
     'about.btn': { fi: 'Hallitukset →', en: 'Board Members →' },
 
+    /* ── PRESS ── */
+    'press.eyebrow': { fi: 'Mediassa', en: 'In the Press' },
+    'press.title': { fi: 'Winvest <em>uutisissa</em>', en: 'Winvest in the <em>News</em>' },
+    'press.kl.title': { fi: 'Opiskelijat vierailivat suomalaisessa hedge-rahastossa — "Olipa vaikuttavaa"', en: 'Students visited a Finnish hedge fund — "It was impressive"' },
+    'press.kl.desc': { fi: 'Kauppalehti haastatteli Winvestin ja AaltoES Investment Clubin puheenjohtajia heidän excursionsa jälkeen Estlander & Partnersilla.', en: 'Kauppalehti interviewed the presidents of Winvest and AaltoES Investment Club after their excursion to Estlander & Partners.' },
+    'press.kl.read': { fi: 'Lue artikkeli →', en: 'Read article →' },
+
     /* ── HALLITUKSET ── */
     'board.title': { fi: 'Hallitukset', en: 'Board Members' },
     'board.yearTitle': { fi: 'Hallitus', en: 'Board' },
@@ -89,9 +96,11 @@
     /* ── TYÖPAIKAT ── */
     'jobs.title': { fi: 'Avoimet työpaikat', en: 'Open Positions' },
     'jobs.subtitle': { fi: 'Mahdollisuudet rahoitusalalla', en: 'Opportunities in Finance' },
-    'jobs.intro': { fi: 'Winvest kerää jäsenilleen avoimia harjoittelu- ja työpaikkoja rahoitus- ja sijoitusalalta. Tällä hetkellä ei ole avoimia paikkoja — tarkista myöhemmin uudelleen.', en: 'Winvest curates internship and job openings in the finance and investment sector for its members. There are currently no open positions — check back later.' },
+    'jobs.intro': { fi: 'Winvest kerää jäsenilleen avoimia harjoittelu- ja työpaikkoja rahoitus- ja sijoitusalalta. Alta löydät tämänhetkiset avoimet paikat.', en: 'Winvest curates internship and job openings in the finance and investment sector for its members. Below you\'ll find the current open positions.' },
     'jobs.empty': { fi: 'Ei avoimia paikkoja tällä hetkellä', en: 'No open positions at this time' },
     'jobs.empty.sub': { fi: 'Seuraa somekanaviamme — ilmoitamme uusista paikoista siellä ensimmäisenä', en: 'Follow our social media — we announce new positions there first' },
+    'jobs.ecb.desc': { fi: 'EKP:n Market Operations -osastolla pääset tutustumaan rahapoliittisten operaatioiden toteutukseen, rahoitusvakauden seurantaan ja markkinainfrastruktuuriin Euroopan keskuspankissa.', en: 'At the ECB\'s Market Operations division, you will gain exposure to the implementation of monetary policy operations, financial stability monitoring, and market infrastructure at the European Central Bank.' },
+    'jobs.apply': { fi: 'Hae paikkaa →', en: 'Apply →' },
 
     /* ── KUMPPANIT ── */
     'partners.title': { fi: 'Kumppanit', en: 'Partners' },
