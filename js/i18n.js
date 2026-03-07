@@ -17,6 +17,11 @@
     'nav.events': { fi: 'Tapahtumat', en: 'Events' },
     'nav.exams': { fi: 'Opinnot', en: 'Studies' },
 
+    /* COOKIE BANNER */
+    'cookie.text': { fi: 'Käytämme evästeitä sivuston analytiikkaan ja käyttökokemuksen parantamiseen.', en: 'We use cookies for site analytics and to improve your experience.' },
+    'cookie.accept': { fi: 'Hyväksy', en: 'Accept' },
+    'cookie.decline': { fi: 'Hylkää', en: 'Decline' },
+
     /* FOOTER */
     'footer.copy': { fi: '© 2025 Winvest — Yliopiston Sijoituskerho', en: '© 2025 Winvest — University Investment Club' },
 

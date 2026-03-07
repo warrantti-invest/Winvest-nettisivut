@@ -1763,6 +1763,83 @@ footer {
   color: var(--navy);
 }
 
+/* ── Cookie Banner ── */
+.cookie-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 5, 48, 0.6);
+}
+.cookie-banner.visible {
+  display: flex;
+}
+.cookie-inner {
+  background: var(--navy);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-radius: 10px;
+  max-width: 460px;
+  width: 90%;
+  padding: 2rem 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+.cookie-text {
+  font-size: 0.82rem;
+  color: var(--gray, #a0a0b8);
+  margin: 0;
+  line-height: 1.5;
+}
+.cookie-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+.cookie-btn {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1.5px solid rgba(201, 168, 76, 0.5);
+  transition: all 0.25s;
+}
+.cookie-btn-accept {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+.cookie-btn-accept:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+}
+.cookie-btn-decline {
+  background: transparent;
+  color: var(--gray, #a0a0b8);
+  border-color: rgba(160, 160, 184, 0.3);
+}
+.cookie-btn-decline:hover {
+  color: var(--white);
+  border-color: rgba(160, 160, 184, 0.6);
+}
+@media (max-width: 600px) {
+  .cookie-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+}
+
 .lang-badge-fi {
   display: none;
   font-size: 0.65rem;
