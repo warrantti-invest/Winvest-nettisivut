@@ -1605,10 +1605,10 @@ footer {
 .timeline-img {
   width: 40%;
   max-width: 360px;
-  height: auto;
+  height: 200px;
   border-radius: 4px;
   flex-shrink: 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* --- RESPONSIVE --- */
