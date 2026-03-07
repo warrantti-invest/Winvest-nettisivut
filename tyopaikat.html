@@ -6,6 +6,7 @@
   <title>Avoimet työpaikat — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html" class="active">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" class="active" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,8 +32,8 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Avoimet työpaikat</div>
-      <div class="page-subtitle">Mahdollisuudet rahoitusalalla</div>
+      <div class="page-title" data-i18n="jobs.title">Avoimet työpaikat</div>
+      <div class="page-subtitle" data-i18n="jobs.subtitle">Mahdollisuudet rahoitusalalla</div>
     </div>
   </div>
 
@@ -40,7 +41,7 @@
   <div class="jobs-section fade-in">
 
     <div class="jobs-intro">
-      <p>Winvest kerää jäsenilleen avoimia harjoittelu- ja työpaikkoja rahoitus- ja sijoitusalalta. Tällä hetkellä ei ole avoimia paikkoja — tarkista myöhemmin uudelleen.</p>
+      <p data-i18n="jobs.intro">Winvest kerää jäsenilleen avoimia harjoittelu- ja työpaikkoja rahoitus- ja sijoitusalalta. Tällä hetkellä ei ole avoimia paikkoja — tarkista myöhemmin uudelleen.</p>
     </div>
 
     <!-- Tyhjä tila — lisää kortit alle kun paikkoja avautuu -->
@@ -48,8 +49,8 @@
 
       <div class="jobs-empty fade-in">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 1 4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-        <span>Ei avoimia paikkoja tällä hetkellä</span>
-        <span class="jobs-empty-sub">Seuraa somekanaviamme — ilmoitamme uusista paikoista siellä ensimmäisenä</span>
+        <span data-i18n="jobs.empty">Ei avoimia paikkoja tällä hetkellä</span>
+        <span class="jobs-empty-sub" data-i18n="jobs.empty.sub">Seuraa somekanaviamme — ilmoitamme uusista paikoista siellä ensimmäisenä</span>
       </div>
 
     </div>
@@ -87,7 +88,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

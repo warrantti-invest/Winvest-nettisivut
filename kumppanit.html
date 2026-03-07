@@ -6,6 +6,7 @@
   <title>Kumppanit — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html" class="active">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" class="active" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,40 +32,40 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Kumppanit</div>
-      <div class="page-subtitle">Yhteistyössä alan johtavien toimijoiden kanssa</div>
+      <div class="page-title" data-i18n="partners.title">Kumppanit</div>
+      <div class="page-subtitle" data-i18n="partners.subtitle">Yhteistyössä alan johtavien toimijoiden kanssa</div>
     </div>
   </div>
 
   <!-- PARTNERS SECTION -->
   <section class="partners-section fade-in">
     <div class="partners-intro">
-      <span class="section-eyebrow">Yhteistyö</span>
-      <h2 class="section-title">Meidän <em>kumppanit</em></h2>
+      <span class="section-eyebrow" data-i18n="partners.eyebrow">Yhteistyö</span>
+      <h2 class="section-title" data-i18n="partners.heading">Meidän <em>kumppanit</em></h2>
       <div class="gold-line"></div>
-      <p>Winvest tekee yhteistyötä finanssialan yritysten ja organisaatioiden kanssa tarjotakseen jäsenilleen ainutlaatuisia mahdollisuuksia verkostoitumiseen, oppimiseen ja urakehitykseen.</p>
+      <p data-i18n="partners.intro">Winvest tekee yhteistyötä finanssialan yritysten ja organisaatioiden kanssa tarjotakseen jäsenilleen ainutlaatuisia mahdollisuuksia verkostoitumiseen, oppimiseen ja urakehitykseen.</p>
     </div>
 
     <div class="partners-grid">
       <div class="partner-card">
-        <div class="partner-logo-placeholder">Kumppani</div>
+        <div class="partner-logo-placeholder" data-i18n="partners.placeholder">Kumppani</div>
         <div class="partner-info">
-          <div class="partner-name">Kumppanin nimi</div>
-          <p class="partner-desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
+          <div class="partner-name" data-i18n="partners.name">Kumppanin nimi</div>
+          <p class="partner-desc" data-i18n="partners.desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
         </div>
       </div>
       <div class="partner-card">
-        <div class="partner-logo-placeholder">Kumppani</div>
+        <div class="partner-logo-placeholder" data-i18n="partners.placeholder">Kumppani</div>
         <div class="partner-info">
-          <div class="partner-name">Kumppanin nimi</div>
-          <p class="partner-desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
+          <div class="partner-name" data-i18n="partners.name">Kumppanin nimi</div>
+          <p class="partner-desc" data-i18n="partners.desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
         </div>
       </div>
       <div class="partner-card">
-        <div class="partner-logo-placeholder">Kumppani</div>
+        <div class="partner-logo-placeholder" data-i18n="partners.placeholder">Kumppani</div>
         <div class="partner-info">
-          <div class="partner-name">Kumppanin nimi</div>
-          <p class="partner-desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
+          <div class="partner-name" data-i18n="partners.name">Kumppanin nimi</div>
+          <p class="partner-desc" data-i18n="partners.desc">Kuvaus yhteistyöstä lisätään myöhemmin.</p>
         </div>
       </div>
     </div>
@@ -78,8 +79,8 @@
             <div class="member-name">Inka Hanhimäki</div>
           </div>
         </div>
-        <p>Haluatko yrityksesi Winvestin kumppaniksi?</p>
-        <a href="mailto:Winvest@warrantti.org?cc=vtenhunen1@gmail.com" class="btn-gold">Ota yhteyttä →</a>
+        <p data-i18n="partners.cta">Haluatko yrityksesi Winvestin kumppaniksi?</p>
+        <a href="mailto:Winvest@warrantti.org?cc=vtenhunen1@gmail.com" class="btn-gold" data-i18n="partners.btn">Ota yhteyttä →</a>
       </div>
     </div>
   </section>
@@ -98,7 +99,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

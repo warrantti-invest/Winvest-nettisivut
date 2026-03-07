@@ -6,6 +6,7 @@
   <title>Tenttipankki — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html" class="active">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" class="active" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,8 +32,8 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Tenttipankki</div>
-      <div class="page-subtitle">Vanhat tentit ja opiskelumateriaalit</div>
+      <div class="page-title" data-i18n="tentti.title">Tenttipankki</div>
+      <div class="page-subtitle" data-i18n="tentti.subtitle">Vanhat tentit ja opiskelumateriaalit</div>
     </div>
   </div>
 
@@ -40,7 +41,7 @@
   <section class="tentti-section fade-in">
 
     <div class="tentti-intro">
-      <p>Tervetuloa Winvestin tenttipankkiin! Täältä löydät vanhoja tenttejä, malleja harkkatöihin ja opiskelumateriaalia kauppatieteiden opintoihin. Materiaalit on jaoteltu kursseittain.</p>
+      <p data-i18n="tentti.intro">Tervetuloa Winvestin tenttipankkiin! Täältä löydät vanhoja tenttejä, malleja harkkatöihin ja opiskelumateriaalia kauppatieteiden opintoihin. Materiaalit on jaoteltu kursseittain.</p>
     </div>
 
     <div class="tentti-subjects">
@@ -49,16 +50,16 @@
       <div class="tentti-subject">
         <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h2>Laskentatoimi</h2>
+          <h2 data-i18n="tentti.accounting">Laskentatoimi</h2>
         </div>
-        <p class="tentti-placeholder">Kursseja ja tenttejä lisätään pian</p>
+        <p class="tentti-placeholder" data-i18n="tentti.coming">Kursseja ja tenttejä lisätään pian</p>
       </div>
 
       <!-- RAHOITUS -->
       <div class="tentti-subject">
         <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h2>Rahoitus</h2>
+          <h2 data-i18n="tentti.finance">Rahoitus</h2>
         </div>
 
         <div class="tentti-course-dropdown" onclick="this.classList.toggle('open')">
@@ -162,15 +163,15 @@
       <div class="tentti-subject">
         <div class="tentti-subject-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          <h2>Taloustiede</h2>
+          <h2 data-i18n="tentti.economics">Taloustiede</h2>
         </div>
-        <p class="tentti-placeholder">Kursseja ja tenttejä lisätään pian</p>
+        <p class="tentti-placeholder" data-i18n="tentti.coming">Kursseja ja tenttejä lisätään pian</p>
       </div>
 
     </div>
 
     <div class="tentti-cta">
-      <p>Haluatko jakaa omia tenttejäsi? Ota yhteyttä hallitukseen tai lähetä materiaalit Telegram-ryhmässä!</p>
+      <p data-i18n="tentti.cta">Haluatko jakaa omia tenttejäsi? Ota yhteyttä hallitukseen tai lähetä materiaalit Telegram-ryhmässä!</p>
     </div>
 
   </section>
@@ -189,7 +190,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

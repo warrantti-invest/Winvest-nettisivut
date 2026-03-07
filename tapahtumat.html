@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tapahtumat â€” Winvest</title>
+  <title>Tapahtumat — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html" class="active">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" class="active" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,8 +32,8 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Tapahtumat</div>
-      <div class="page-subtitle">Winvestin tulevat ja menneet tapahtumat</div>
+      <div class="page-title" data-i18n="events.title">Tapahtumat</div>
+      <div class="page-subtitle" data-i18n="events.subtitle">Winvestin tulevat ja menneet tapahtumat</div>
     </div>
   </div>
 
@@ -40,10 +41,10 @@
   <section class="tapahtumat-section fade-in">
 
     <div class="tapahtumat-intro">
-      <p>Winvest järjestää monipuolisia tapahtumia jäsenilleen â€” excursioista yritysvierailuihin, sijoitusiltamista vuosijuhliin. Täältä löydät tulevat tapahtumat sekä katsauksen menneisiin.</p>
+      <p data-i18n="events.intro">Winvest järjestää monipuolisia tapahtumia jäsenilleen — excursioista yritysvierailuihin, sijoitusiltamista vuosijuhliin. Täältä löydät tulevat tapahtumat sekä katsauksen menneisiin.</p>
     </div>
 
-    <h2 class="tapahtumat-heading">Tulevat tapahtumat</h2>
+    <h2 class="tapahtumat-heading" data-i18n="events.upcoming">Tulevat tapahtumat</h2>
 
     <div class="timeline">
 
@@ -51,10 +52,10 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Stock & Shots</h3>
+            <h3>Stock & Shots <span class="lang-badge-fi">In Finnish</span></h3>
             <span class="timeline-badge">25.3.2026</span>
-            <p>Tule kuulemaan Suomen Osakesäästäjien toimitusjohtajan ajankohtainen katsaus osakemarkkinoihin! Illan aikana pureudutaan markkinoiden kuumimpiin puheenaiheisiin rennossa tunnelmassa — ja hintaan kuuluu alkoholitarjoilu. Tämä on tilaisuus, jota et halua missata.</p>
-            <p>Liity seuraamme ja verkostoidu samanhenkisten sijoittajien kanssa lasillisen äärellä!</p>
+            <p data-i18n="event.stockshots.p1">Tule kuulemaan Suomen Osakesäästäjien toimitusjohtajan ajankohtainen katsaus osakemarkkinoihin! Illan aikana pureudutaan markkinoiden kuumimpiin puheenaiheisiin rennossa tunnelmassa — ja hintaan kuuluu alkoholitarjoilu. Tämä on tilaisuus, jota et halua missata.</p>
+            <p data-i18n="event.stockshots.p2">Liity seuraamme ja verkostoidu samanhenkisten sijoittajien kanssa lasillisen äärellä!</p>
           </div>
           <img src="assets/Tapahtumat/stock%26shots.jpg" alt="Stock & Shots" class="timeline-img" />
         </div>
@@ -64,12 +65,12 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Excursio Helsinki</h3>
+            <h3>Excursio Helsinki <span class="lang-badge-fi">In Finnish</span></h3>
             <span class="timeline-badge">9.4.2026</span>
             <h4>Mandatum</h4>
-            <p>Mandatumilla käsitellään markkinanäkymiä sekä sijoitustuotteita (strukturoidut, korko ja vaihtoehtoiset sijoitukset).</p>
+            <p data-i18n="event.excu.hki.mandatum">Mandatumilla käsitellään markkinanäkymiä sekä sijoitustuotteita (strukturoidut, korko ja vaihtoehtoiset sijoitukset).</p>
             <h4>Danske Bank</h4>
-            <p>Danske Bankilla tutustumme pankin Markets-toimintoihin, kuten Trade Financeen, Foreign Exchangeen, Equity Researchiin, Debt Capital Marketsiin sekä Corporate Lendingiin. Ohjelmaan kuuluu myös Markets-vierailu ja alumni-uratarinoita.</p>
+            <p data-i18n="event.excu.hki.danske">Danske Bankilla tutustumme pankin Markets-toimintoihin, kuten Trade Financeen, Foreign Exchangeen, Equity Researchiin, Debt Capital Marketsiin sekä Corporate Lendingiin. Ohjelmaan kuuluu myös Markets-vierailu ja alumni-uratarinoita.</p>
           </div>
           <img src="assets/Tapahtumat/helsinki.jpg" alt="Excursio Helsinki" class="timeline-img" />
         </div>
@@ -77,7 +78,7 @@
 
     </div>
 
-    <h2 class="tapahtumat-heading">Menneet tapahtumat</h2>
+    <h2 class="tapahtumat-heading" data-i18n="events.past">Menneet tapahtumat</h2>
 
     <div class="timeline">
 
@@ -88,7 +89,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Naistenpäivä x VES</h3>
+            <h3>Naistenpäivä x VES <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -100,7 +101,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Rookie Dinner 2026</h3>
+            <h3>Rookie Dinner 2026 <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -115,7 +116,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Winvest Info Ilta</h3>
+            <h3>Winvest Info Ilta <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -126,7 +127,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Rookie Dinner</h3>
+            <h3>Rookie Dinner <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -137,7 +138,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Finance as Career Excursio</h3>
+            <h3>Finance as Career Excursio <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -149,9 +150,9 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Naisten päivä x VES</h3>
+            <h3>Naisten päivä x VES <span class="lang-badge-fi">In Finnish</span></h3>
             <p>7.3.2025</p>
-            <p>Naistenpäivän tapahtumassa puhujina olivat Laura Rahikka Hycamitelta ja Tuuli Prinkkilä Fintosista. He jakoivat ajatuksiaan yrittäjyydestä ja kertoivat omista urapoluistaan.</p>
+            <p data-i18n="event.naisten25.p">Naistenpäivän tapahtumassa puhujina olivat Laura Rahikka Hycamitelta ja Tuuli Prinkkilä Fintosista. He jakoivat ajatuksiaan yrittäjyydestä ja kertoivat omista urapoluistaan.</p>
           </div>
           <img src="assets/Tapahtumat/closerose.webp" alt="Naisten päivä x VES" class="timeline-img" />
         </div>
@@ -161,11 +162,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Excursio Helsinki</h3>
+            <h3>Excursio Helsinki <span class="lang-badge-fi">In Finnish</span></h3>
             <h4>Evli</h4>
-            <p>Evlillä syvennyttiin varainhoidon ja pääomamarkkinoiden maailmaan.</p>
+            <p data-i18n="event.evli">Evlillä syvennyttiin varainhoidon ja pääomamarkkinoiden maailmaan.</p>
             <h4>Nordea</h4>
-            <p>Nordealla kuultiin pankkitoiminnasta ja talouden tulevaisuuden näkymistä. Päivä huipentui verkostoitumiseen illallisen merkeissä.</p>
+            <p data-i18n="event.nordea">Nordealla kuultiin pankkitoiminnasta ja talouden tulevaisuuden näkymistä. Päivä huipentui verkostoitumiseen illallisen merkeissä.</p>
           </div>
           <img src="assets/Tapahtumat/helsinki.jpg" alt="Excursio Helsinki" class="timeline-img" />
         </div>
@@ -175,7 +176,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Excursio Vaasa</h3>
+            <h3>Excursio Vaasa <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -187,7 +188,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Kylterijäiset</h3>
+            <h3>Kylterijäiset <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -199,8 +200,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Sijoittaja 2025 -messut, Helsinki</h3>
-            <p>Warrantti Invest suuntasi Sijoittaja 2025 -messuille Helsingin Messukeskukseen tutustumaan sijoittamisen teemoihin, trendeihin ja ajankohtaiseen sisältöön. Tapahtuman virallinen Afterwork järjestettiin Cafe Solossa.</p>
+            <h3>Sijoittaja 2025 -messut, Helsinki <span class="lang-badge-fi">In Finnish</span></h3>
+            <p data-i18n="event.sijoittaja25">Warrantti Invest suuntasi Sijoittaja 2025 -messuille Helsingin Messukeskukseen tutustumaan sijoittamisen teemoihin, trendeihin ja ajankohtaiseen sisältöön. Tapahtuman virallinen Afterwork järjestettiin Cafe Solossa.</p>
           </div>
           <img src="assets/Tapahtumat/helsinki.jpg" alt="Sijoitusmessut, Helsinki" class="timeline-img" />
         </div>
@@ -210,8 +211,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Institutional Trading and Markets</h3>
-            <p>Winvestin entinen puheenjohtaja Kare Laine saapuu Vaasaan kertomaan meille työstään Nordea Marketsilla. Kare on työskennellyt osakeoptioiden markkinatakauksessa (Equity Derivatives Trading) sekä valuuttadeskillä (FX Sales). Tapahtumassa on kahvitarjoilut.</p>
+            <h3>Institutional Trading and Markets <span class="lang-badge-fi">In Finnish</span></h3>
+            <p data-i18n="event.institutional">Winvestin entinen puheenjohtaja Kare Laine saapuu Vaasaan kertomaan meille työstään Nordea Marketsilla. Kare on työskennellyt osakeoptioiden markkinatakauksessa (Equity Derivatives Trading) sekä valuuttadeskillä (FX Sales). Tapahtumassa on kahvitarjoilut.</p>
           </div>
           <img src="assets/Tapahtumat/Nordea_floor.jpg.webp" alt="Institutional Trading and Markets" class="timeline-img" />
         </div>
@@ -221,8 +222,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Finance as a Career</h3>
-            <p>Alumnitapahtuma, jossa vieraana Nordean, BDO:n ja EY:n edustajat. He jakoivat urapolkujaan, kertoivat tyypillisestä työpäivästään ja antoivat vinkkejä opintoihin sekä työnhakuun. Tapahtuman tavoitteena oli auttaa opiskelijoita hahmottamaan, millaisia urapolkuja ja työmahdollisuuksia on tarjolla laskentatoimen ja rahoituksen aloilla.</p>
+            <h3>Finance as a Career <span class="lang-badge-fi">In Finnish</span></h3>
+            <p data-i18n="event.fincareer">Alumnitapahtuma, jossa vieraana Nordean, BDO:n ja EY:n edustajat. He jakoivat urapolkujaan, kertoivat tyypillisestä työpäivästään ja antoivat vinkkejä opintoihin sekä työnhakuun. Tapahtuman tavoitteena oli auttaa opiskelijoita hahmottamaan, millaisia urapolkuja ja työmahdollisuuksia on tarjolla laskentatoimen ja rahoituksen aloilla.</p>
           </div>
           <img src="assets/Tapahtumat/espa.jpg" alt="Finance as a Career" class="timeline-img" />
         </div>
@@ -232,12 +233,12 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Excursio Helsinki</h3>
+            <h3>Excursio Helsinki <span class="lang-badge-fi">In Finnish</span></h3>
             <p>17.–18.4.2025</p>
             <h4>United Bankers</h4>
             <h4>Danske Bank</h4>
             <h4>CapMan</h4>
-            <p>Kahden päivän excursiolla Helsinkiin pääsimme tutustumaan United Bankersiin, Danske Bankkiin sekä CapManiin. Luvassa oli myös illanviettoa porukalla, joten tekemistä riitti koko excun ajaksi!</p>
+            <p data-i18n="event.excu.hki.apr">Kahden päivän excursiolla Helsinkiin pääsimme tutustumaan United Bankersiin, Danske Bankkiin sekä CapManiin. Luvassa oli myös illanviettoa porukalla, joten tekemistä riitti koko excun ajaksi!</p>
           </div>
           <img src="assets/Tapahtumat/helsinki.jpg" alt="Excursio Helsinki" class="timeline-img" />
         </div>
@@ -250,11 +251,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Syksyn Excursio Helsinki</h3>
+            <h3>Syksyn Excursio Helsinki <span class="lang-badge-fi">In Finnish</span></h3>
             <h4>Aktia</h4>
-            <p>Aktialla kuulimme pääekonomistin ajankohtaisen katsauksen talouteen.</p>
+            <p data-i18n="event.aktia">Aktialla kuulimme pääekonomistin ajankohtaisen katsauksen talouteen.</p>
             <h4>Suomen Pankki</h4>
-            <p>Suomen Pankissa tutustuimme kultavarantoihin ja pankin toimintaan osana eurojärjestelmää. Päivä huipentui verkostoitumiseen illallisen merkeissä.</p>
+            <p data-i18n="event.sp">Suomen Pankissa tutustuimme kultavarantoihin ja pankin toimintaan osana eurojärjestelmää. Päivä huipentui verkostoitumiseen illallisen merkeissä.</p>
           </div>
           <img src="assets/Slaider/excursio-aktia.jpg" alt="Syksyn Excursio Helsinki" class="timeline-img" />
         </div>
@@ -264,7 +265,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Winvest Excursio</h3>
+            <h3>Winvest Excursio <span class="lang-badge-fi">In Finnish</span></h3>
             <p>testi 1</p>
             <p>testi 2</p>
           </div>
@@ -275,9 +276,9 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Naistenpäivä â€” VES & Bloom by Johanna</h3>
+            <h3>Naistenpäivä — VES & Bloom by Johanna <span class="lang-badge-fi">In Finnish</span></h3>
             <p>8.3.2024</p>
-            <p>Naistenpäivää juhlittiin yhdessä VES:in ja Bloom by Johannan kanssa! Tapahtuman puhujina olivat kauneusalan verkkokauppa Bloom by Johannan perustanut Johanna Tähtinen sekä naisyrittäjyyttä paljon tutkinut Sami Vähämaa. Illan ohjelmaan kuului myös tarjoiluja, musiikkia ja yhteistä hengailua naistenpäivän kunniaksi.</p>
+            <p data-i18n="event.naisten24">Naistenpäivää juhlittiin yhdessä VES:in ja Bloom by Johannan kanssa! Tapahtuman puhujina olivat kauneusalan verkkokauppa Bloom by Johannan perustanut Johanna Tähtinen sekä naisyrittäjyyttä paljon tutkinut Sami Vähämaa. Illan ohjelmaan kuului myös tarjoiluja, musiikkia ja yhteistä hengailua naistenpäivän kunniaksi.</p>
           </div>
           <img src="assets/Tapahtumat/closerose.webp" alt="Naistenpäivä 2024" class="timeline-img" />
         </div>
@@ -287,8 +288,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Teemailta: Kryptovaluutat â€” Coinmotion</h3>
-            <p>Teemailta kryptovaluutoista Coinmotionin Partner Manager Pessi Peuran kanssa. Coinmotion on Pohjoismaiden johtava kryptovaluuttojen palveluntarjoaja, joka keskittyy kryptovaluuttojen vaihtoon, säilytykseen ja varainhoitoon. Yrityksellä on yli 120 000 asiakasta, ja se on perustettu vuonna 2012.</p>
+            <h3>Teemailta: Kryptovaluutat — Coinmotion <span class="lang-badge-fi">In Finnish</span></h3>
+            <p data-i18n="event.coinmotion">Teemailta kryptovaluutoista Coinmotionin Partner Manager Pessi Peuran kanssa. Coinmotion on Pohjoismaiden johtava kryptovaluuttojen palveluntarjoaja, joka keskittyy kryptovaluuttojen vaihtoon, säilytykseen ja varainhoitoon. Yrityksellä on yli 120 000 asiakasta, ja se on perustettu vuonna 2012.</p>
           </div>
           <img src="assets/svg/bitcoin.svg" alt="Bitcoin" class="timeline-img" />
         </div>
@@ -298,8 +299,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-text">
-            <h3>Teemailta: Asuntosijoittaminen</h3>
-            <p>Teemailta asuntosijoittamisesta alumnimme, Suomen vuokranantajat ry:n ekonomistin Eemeli Karlssonin johdattelemana. Eemeli kertoi asuntosijoittamisesta ja asuntomarkkinoista sekä uramahdollisuuksista valmistumisen jälkeen.</p>
+            <h3>Teemailta: Asuntosijoittaminen <span class="lang-badge-fi">In Finnish</span></h3>
+            <p data-i18n="event.asunto">Teemailta asuntosijoittamisesta alumnimme, Suomen vuokranantajat ry:n ekonomistin Eemeli Karlssonin johdattelemana. Eemeli kertoi asuntosijoittamisesta ja asuntomarkkinoista sekä uramahdollisuuksista valmistumisen jälkeen.</p>
           </div>
           <img src="assets/Tapahtumat/rantatampella.webp" alt="Asuntosijoittaminen" class="timeline-img" />
         </div>
@@ -323,7 +324,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">Â© 2025 Winvest â€” Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

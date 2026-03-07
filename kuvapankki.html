@@ -6,6 +6,7 @@
   <title>Kuvapankki — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
   <style>
     /* Lightbox */
     .lightbox {
@@ -57,14 +58,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html" class="active">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" class="active" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -72,8 +73,8 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Kuvapankki</div>
-      <div class="page-subtitle">Tapahtumat & muistot</div>
+      <div class="page-title" data-i18n="gallery.title">Kuvapankki</div>
+      <div class="page-subtitle" data-i18n="gallery.subtitle">Tapahtumat & muistot</div>
     </div>
   </div>
 
@@ -82,11 +83,11 @@
 
     <!-- Filters -->
     <div class="gallery-filter fade-in">
-      <button class="filter-btn active" data-filter="all">Kaikki</button>
-      <button class="filter-btn" data-filter="excursio">Excursiot</button>
-      <button class="filter-btn" data-filter="gaala">Gaalat</button>
-      <button class="filter-btn" data-filter="hallitus">Hallitus</button>
-      <button class="filter-btn" data-filter="tapahtuma">Tapahtumat</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="gallery.all">Kaikki</button>
+      <button class="filter-btn" data-filter="excursio" data-i18n="gallery.excursions">Excursiot</button>
+      <button class="filter-btn" data-filter="gaala" data-i18n="gallery.galas">Gaalat</button>
+      <button class="filter-btn" data-filter="hallitus" data-i18n="gallery.board">Hallitus</button>
+      <button class="filter-btn" data-filter="tapahtuma" data-i18n="gallery.events">Tapahtumat</button>
     </div>
 
     <!-- Grid -->
@@ -151,7 +152,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

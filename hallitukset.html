@@ -6,6 +6,7 @@
   <title>Hallitukset — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html" class="active">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" class="active" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,7 +32,7 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Hallitukset</div>
+      <div class="page-title" data-i18n="board.title">Hallitukset</div>
     </div>
   </div>
 
@@ -42,56 +43,56 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2026</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-grid">
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/ville-tenhunen.jpg" alt="Ville Tenhunen" /></div>
-          <div class="member-info"><div class="member-role">Puheenjohtaja</div><div class="member-name">Ville Tenhunen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.pj">Puheenjohtaja</div><div class="member-name">Ville Tenhunen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/eero-tahvanainen.jpg" alt="Eero Tahvanainen" /></div>
-          <div class="member-info"><div class="member-role">Varapuheenjohtaja</div><div class="member-name">Eero Tahvanainen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.vpj">Varapuheenjohtaja</div><div class="member-name">Eero Tahvanainen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/niko-ammala.jpg" alt="Niko Ämmälä" /></div>
-          <div class="member-info"><div class="member-role">Rahastonhoitaja</div><div class="member-name">Niko Ämmälä</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.rahastonhoitaja">Rahastonhoitaja</div><div class="member-name">Niko Ämmälä</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Jonatan Saariniemi</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Jonatan Saariniemi</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Miika Nummela</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Miika Nummela</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2026/tino-korjala.jpg" alt="Tino Korjala" /></div>
-          <div class="member-info"><div class="member-role">IT-vastaava</div><div class="member-name">Tino Korjala</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.it">IT-vastaava</div><div class="member-name">Tino Korjala</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Yrityssuhdevastaava</div><div class="member-name">Meri-Tuuli Ropilo</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.yrityss">Yrityssuhdevastaava</div><div class="member-name">Meri-Tuuli Ropilo</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/inka-hanhimaki.jpg" alt="Inka Hanhimäki" /></div>
-          <div class="member-info"><div class="member-role">Yrityssuhdevastaava</div><div class="member-name">Inka Hanhimäki</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.yrityss">Yrityssuhdevastaava</div><div class="member-name">Inka Hanhimäki</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Meeri Heinonen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Meeri Heinonen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Excursiovastaava</div><div class="member-name">Antti Virolainen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.excursio">Excursiovastaava</div><div class="member-name">Antti Virolainen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Tuulia Nylander</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Tuulia Nylander</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role">Excursiovastaava</div><div class="member-name">Janne Lappi</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.excursio">Excursiovastaava</div><div class="member-name">Janne Lappi</div></div>
         </div>
       </div>
     </div>
@@ -100,56 +101,56 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2025</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-grid">
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2026/matias-sainio.jpg" alt="Matias Sainio" /></div>
-          <div class="member-info"><div class="member-role">Puheenjohtaja</div><div class="member-name">Matias Sainio</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.pj">Puheenjohtaja</div><div class="member-name">Matias Sainio</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/ville-tenhunen.jpg" alt="Ville Tenhunen" /></div>
-          <div class="member-info"><div class="member-role">Varapuheenjohtaja</div><div class="member-name">Ville Tenhunen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.vpj">Varapuheenjohtaja</div><div class="member-name">Ville Tenhunen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/niko-ammala.jpg" alt="Niko Ämmälä" /></div>
-          <div class="member-info"><div class="member-role">Rahastonhoitaja</div><div class="member-name">Niko Ämmälä</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.rahastonhoitaja">Rahastonhoitaja</div><div class="member-name">Niko Ämmälä</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/julius-korva.jpg" alt="Julius Korva" /></div>
-          <div class="member-info"><div class="member-role">Sihteeri</div><div class="member-name">Julius Korva</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.sihteeri">Sihteeri</div><div class="member-name">Julius Korva</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/alexandar-tadic.jpg" alt="Alexandar Tadic" /></div>
-          <div class="member-info"><div class="member-role">Tapahtumavastaava</div><div class="member-name">Alexandar Tadic</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.tapahtumavastaava">Tapahtumavastaava</div><div class="member-name">Alexandar Tadic</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/siiri-salovaara.jpg" alt="Siiri Salovaara" /></div>
-          <div class="member-info"><div class="member-role">Viestintävastaava</div><div class="member-name">Siiri Salovaara</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.viestintavastaava">Viestintävastaava</div><div class="member-name">Siiri Salovaara</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/joonas-sjoblom.jpg" alt="Joonas Sjöblom" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Joonas Sjöblom</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Joonas Sjöblom</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/emilia-huhtala.jpg" alt="Emilia Huhtala" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Emilia Huhtala</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Emilia Huhtala</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/inka-hanhimaki.jpg" alt="Inka Hanhimäki" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Inka Hanhimäki</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Inka Hanhimäki</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/mosku-mettala.jpg" alt="Mosku Mettälä" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Mosku Mettälä</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Mosku Mettälä</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/eero-tahvanainen.jpg" alt="Eero Tahvanainen" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Eero Tahvanainen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Eero Tahvanainen</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/sampsa-oksanen.jpg" alt="Sampsa Oksanen" /></div>
-          <div class="member-info"><div class="member-role">Hallituksen jäsen</div><div class="member-name">Sampsa Oksanen</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Sampsa Oksanen</div></div>
         </div>
       </div>
     </div>
@@ -158,7 +159,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2024</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Vilja Härkönen</div>
@@ -176,7 +177,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2023</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Nimi Sukunimi</div>
@@ -192,7 +193,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2022</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Mikko Valtanen</div>
@@ -214,7 +215,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2021</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Nimi Sukunimi</div>
@@ -230,7 +231,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2020</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Julia Klemola</div>
@@ -250,7 +251,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2019</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Julia Klemola</div>
@@ -265,7 +266,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2018</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Nimi Sukunimi</div>
@@ -281,7 +282,7 @@
     <div class="board-year fade-in">
       <div class="year-header">
         <span class="year-num">2017</span>
-        <span class="year-title">Hallitus</span>
+        <span class="year-title" data-i18n="board.yearTitle">Hallitus</span>
       </div>
       <div class="board-name-list">
         <div class="board-name-item"><span class="name-role">PJ</span> Nimi Sukunimi</div>
@@ -309,7 +310,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

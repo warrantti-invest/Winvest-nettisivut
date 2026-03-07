@@ -6,6 +6,7 @@
   <title>Sijoittamisen aloittaminen — Winvest</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html" class="active">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" class="active" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,8 +32,8 @@
   <div class="page-hero">
     <div class="page-hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.4), rgba(5,5,48,0.4)), url('assets/Tapahtumat/nyc.jpg'); background-size: cover; background-position: center 30%;"></div>
     <div class="page-hero-content">
-      <div class="page-title">Sijoittamisen aloittaminen</div>
-      <div class="page-subtitle">Opas sijoittamisen maailmaan</div>
+      <div class="page-title" data-i18n="sij.title">Sijoittamisen aloittaminen</div>
+      <div class="page-subtitle" data-i18n="sij.subtitle">Opas sijoittamisen maailmaan</div>
     </div>
   </div>
 
@@ -40,7 +41,7 @@
   <div class="sij-section fade-in">
 
     <div class="sij-intro">
-      <p>Sijoittaminen voi tuntua aluksi monimutkaiselta, mutta oikeilla perusteilla pääset hyvin alkuun. Tällä sivulla esittelemme tärkeimmät käsitteet ja ensimmäiset askeleet sijoitusmaailmaan.</p>
+      <p data-i18n="sij.intro">Sijoittaminen voi tuntua aluksi monimutkaiselta, mutta oikeilla perusteilla pääset hyvin alkuun. Tällä sivulla esittelemme tärkeimmät käsitteet ja ensimmäiset askeleet sijoitusmaailmaan.</p>
     </div>
 
     <div class="sij-grid">
@@ -49,55 +50,55 @@
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16"/></svg>
         </div>
-        <div class="sij-card-title">Miksi sijoittaa?</div>
-        <div class="sij-card-text">Sijoittaminen on tapa kasvattaa varallisuutta pitkällä aikavälillä. Korkoa korolle -efekti tekee säännöllisestä sijoittamisesta erittäin tehokasta — mitä aikaisemmin aloitat, sitä parempi.</div>
+        <div class="sij-card-title" data-i18n="sij.why">Miksi sijoittaa?</div>
+        <div class="sij-card-text" data-i18n="sij.why.text">Sijoittaminen on tapa kasvattaa varallisuutta pitkällä aikavälillä. Korkoa korolle -efekti tekee säännöllisestä sijoittamisesta erittäin tehokasta — mitä aikaisemmin aloitat, sitä parempi.</div>
       </div>
 
       <div class="sij-card">
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
         </div>
-        <div class="sij-card-title">Arvo-osuustili</div>
-        <div class="sij-card-text">Sijoittaminen alkaa arvo-osuustilin avaamisella. Suosittuja palveluntarjoajia Suomessa ovat Nordnet, Degiro ja pankit. Vertaile kuluja ennen valintaa.</div>
+        <div class="sij-card-title" data-i18n="sij.account">Arvo-osuustili</div>
+        <div class="sij-card-text" data-i18n="sij.account.text">Sijoittaminen alkaa arvo-osuustilin avaamisella. Suosittuja palveluntarjoajia Suomessa ovat Nordnet, Degiro ja pankit. Vertaile kuluja ennen valintaa.</div>
       </div>
 
       <div class="sij-card">
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-        <div class="sij-card-title">Osakkeet</div>
-        <div class="sij-card-text">Osakkeella omistat osan yrityksestä. Osakkeiden arvo voi nousta tai laskea, ja yritys voi maksaa osinkoja. Hajauttaminen useisiin osakkeisiin pienentää riskiä.</div>
+        <div class="sij-card-title" data-i18n="sij.stocks">Osakkeet</div>
+        <div class="sij-card-text" data-i18n="sij.stocks.text">Osakkeella omistat osan yrityksestä. Osakkeiden arvo voi nousta tai laskea, ja yritys voi maksaa osinkoja. Hajauttaminen useisiin osakkeisiin pienentää riskiä.</div>
       </div>
 
       <div class="sij-card">
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/><path d="M2 12h20"/><path d="M12 2c-3 4-3 14 0 20"/></svg>
         </div>
-        <div class="sij-card-title">Indeksirahastot</div>
-        <div class="sij-card-text">Indeksirahasto seuraa esimerkiksi S&P 500 tai MSCI World -indeksiä. Ne tarjoavat laajan hajautuksen pienillä kuluilla ja soveltuvat erityisen hyvin aloittelijoille.</div>
+        <div class="sij-card-title" data-i18n="sij.index">Indeksirahastot</div>
+        <div class="sij-card-text" data-i18n="sij.index.text">Indeksirahasto seuraa esimerkiksi S&P 500 tai MSCI World -indeksiä. Ne tarjoavat laajan hajautuksen pienillä kuluilla ja soveltuvat erityisen hyvin aloittelijoille.</div>
       </div>
 
       <div class="sij-card">
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
         </div>
-        <div class="sij-card-title">Hajauttaminen</div>
-        <div class="sij-card-text">Älä laita kaikkia munia samaan koriin. Hajauta sijoituksesi eri toimialoille, maihin ja omaisuusluokkiin. Tämä pienentää yksittäisen sijoituksen riskiä merkittävästi.</div>
+        <div class="sij-card-title" data-i18n="sij.diversify">Hajauttaminen</div>
+        <div class="sij-card-text" data-i18n="sij.diversify.text">Älä laita kaikkia munia samaan koriin. Hajauta sijoituksesi eri toimialoille, maihin ja omaisuusluokkiin. Tämä pienentää yksittäisen sijoituksen riskiä merkittävästi.</div>
       </div>
 
       <div class="sij-card">
         <div class="sij-card-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
-        <div class="sij-card-title">Pitkä aikaväli</div>
-        <div class="sij-card-text">Sijoittaminen kannattaa nähdä pitkän aikavälin toimintana. Markkinat heiluvat lyhyellä aikavälillä, mutta historiallisesti ne ovat aina toipuneet ja kasvaneet pitkällä aikavälillä.</div>
+        <div class="sij-card-title" data-i18n="sij.longterm">Pitkä aikaväli</div>
+        <div class="sij-card-text" data-i18n="sij.longterm.text">Sijoittaminen kannattaa nähdä pitkän aikavälin toimintana. Markkinat heiluvat lyhyellä aikavälillä, mutta historiallisesti ne ovat aina toipuneet ja kasvaneet pitkällä aikavälillä.</div>
       </div>
 
     </div>
 
     <div class="sij-cta fade-in">
-      <div class="sij-cta-text">Haluatko oppia lisää? Liity Winvestiin!</div>
-      <a href="hallitukset.html" class="btn-gold">Tutustu kerhoihin</a>
+      <div class="sij-cta-text" data-i18n="sij.cta">Haluatko oppia lisää? Liity Winvestiin!</div>
+      <a href="hallitukset.html" class="btn-gold" data-i18n="sij.cta.btn">Tutustu kerhoihin</a>
     </div>
 
   </div>
@@ -127,23 +128,23 @@
   <!-- KIRJAT -->
   <div class="sij-resources fade-in">
     <div class="sij-resources-title">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg data-i18n="sij.books">
       Kirjat — Aloita tästä
     </div>
     <div class="sij-book-flow">
       <div class="sij-book-step">
         <div class="sij-book-num">1</div>
         <div class="sij-resource-item">
-          <div class="sij-resource-name">Miten sijoitan pörssiosakkeisiin — Seppo Saario</div>
-          <div class="sij-resource-desc">Suomalainen klassikko osakesijoittamisesta. Paras lähtökohta aloittelijalle — selkeä ja käytännönläheinen.</div>
+          <div class="sij-resource-name" data-i18n="sij.book1">Miten sijoitan pörssiosakkeisiin — Seppo Saario</div>
+          <div class="sij-resource-desc" data-i18n="sij.book1.desc">Suomalainen klassikko osakesijoittamisesta. Paras lähtökohta aloittelijalle — selkeä ja käytännönläheinen.</div>
         </div>
       </div>
       <div class="sij-book-arrow">?</div>
       <div class="sij-book-step">
         <div class="sij-book-num">2</div>
         <div class="sij-resource-item">
-          <div class="sij-resource-name">Miten miljoona hankitaan ja kulutetaan — Vesa Puttonen</div>
-          <div class="sij-resource-desc">Opettaa varallisuuden rakentamisen ja järkevän kuluttamisen periaatteet suomalaisesta näkökulmasta.</div>
+          <div class="sij-resource-name" data-i18n="sij.book2">Miten miljoona hankitaan ja kulutetaan — Vesa Puttonen</div>
+          <div class="sij-resource-desc" data-i18n="sij.book2.desc">Opettaa varallisuuden rakentamisen ja järkevän kuluttamisen periaatteet suomalaisesta näkökulmasta.</div>
         </div>
       </div>
       <div class="sij-book-arrow">?</div>
@@ -151,7 +152,7 @@
         <div class="sij-book-num">3</div>
         <div class="sij-resource-item">
           <div class="sij-resource-name">A Random Walk Down Wall Street — Burton Malkiel</div>
-          <div class="sij-resource-desc">Perustelee indeksirahastosijoittamisen ylivoimaisuuden selkeästi ja vakuuttavasti.</div>
+          <div class="sij-resource-desc" data-i18n="sij.book3.desc">Perustelee indeksirahastosijoittamisen ylivoimaisuuden selkeästi ja vakuuttavasti.</div>
         </div>
       </div>
     </div>
@@ -171,7 +172,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>

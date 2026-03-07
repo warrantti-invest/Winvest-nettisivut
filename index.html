@@ -6,6 +6,7 @@
   <title>Winvest — Yliopiston Sijoituskerho</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/analytics.js"></script>
+  <script src="js/i18n.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
       <span><span class="initial">W</span>arrantti <span class="initial">I</span>nvestment Club</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Etusivu</a></li>
-      <li><a href="hallitukset.html">Hallitukset</a></li>
-      <li><a href="kuvapankki.html">Kuvapankki</a></li>
-      <li><a href="sijoittaminen.html">Sijoittamisen aloittaminen</a></li>
-      <li><a href="tyopaikat.html">Avoimet työpaikat</a></li>
-      <li><a href="kumppanit.html">Kumppanit</a></li>
-      <li><a href="tapahtumat.html">Tapahtumat</a></li>
-      <li><a href="tenttipankki.html">Opinnot</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav.home">Etusivu</a></li>
+      <li><a href="hallitukset.html" data-i18n="nav.boards">Hallitukset</a></li>
+      <li><a href="kuvapankki.html" data-i18n="nav.gallery">Kuvapankki</a></li>
+      <li><a href="sijoittaminen.html" data-i18n="nav.investing">Sijoittamisen aloittaminen</a></li>
+      <li><a href="tyopaikat.html" data-i18n="nav.jobs">Avoimet työpaikat</a></li>
+      <li><a href="kumppanit.html" data-i18n="nav.partners">Kumppanit</a></li>
+      <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
+      <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
   </nav>
 
@@ -31,14 +32,14 @@
   <section class="hero">
     <div class="hero-bg" style="background-image: linear-gradient(rgba(5,5,48,0.5), rgba(5,5,48,0.5)), url('assets/vaasan-yliopisto-kampus-syksy-syyskuu-14%20(1).jpg.jpeg'); background-size: cover; background-position: center top;"></div>
     <div class="hero-content">
-      <span class="hero-eyebrow">Yliopiston Sijoituskerho</span>
+      <span class="hero-eyebrow" data-i18n="hero.eyebrow">Yliopiston Sijoituskerho</span>
       <h1>Invest in<br /><em>your future</em></h1>
-      <p class="hero-sub">
+      <p class="hero-sub" data-i18n="hero.sub">
         Winvest on yliopiston johtava sijoituskerho, joka yhdistää 
         sijoittamisesta kiinnostuneet opiskelijat ja tarjoaa käytännön 
         osaamista rahoitusmaailmaan.
       </p>
-      <a href="hallitukset.html" class="btn-gold">Tutustu kerhoihin</a>
+      <a href="hallitukset.html" class="btn-gold" data-i18n="hero.btn">Tutustu kerhoihin</a>
     </div>
   </section>
 
@@ -46,15 +47,15 @@
   <div class="stats-bar fade-in">
     <div class="stat-item">
       <span class="stat-num">2017</span>
-      <span class="stat-label">Perustettu</span>
+      <span class="stat-label" data-i18n="stat.founded">Perustettu</span>
     </div>
     <div class="stat-item">
       <span class="stat-num">100+</span>
-      <span class="stat-label">Jäsentä</span>
+      <span class="stat-label" data-i18n="stat.members">Jäsentä</span>
     </div>
     <div class="stat-item">
       <span class="stat-num">5+</span>
-      <span class="stat-label">Vuotta toiminnassa</span>
+      <span class="stat-label" data-i18n="stat.years">Vuotta toiminnassa</span>
     </div>
   </div>
 
@@ -62,20 +63,20 @@
   <div class="section">
     <div class="about-grid fade-in">
       <div class="about-text">
-        <span class="section-eyebrow">Meistä</span>
-        <h2 class="section-title">Sijoittamisen <em>yhteisö</em></h2>
+        <span class="section-eyebrow" data-i18n="about.eyebrow">Meistä</span>
+        <h2 class="section-title" data-i18n="about.title">Sijoittamisen <em>yhteisö</em></h2>
         <div class="gold-line"></div>
-        <p>
+        <p data-i18n="about.p1">
           Winvest on yliopiston opiskelijoiden perustama sijoituskerho, jonka 
           tavoitteena on edistää taloudellista lukutaitoa ja sijoittamisosaamista 
           opiskelijoiden keskuudessa.
         </p>
-        <p>
+        <p data-i18n="about.p2">
           Järjestämme excursioita johtaviin finanssialan yrityksiin, luentoja 
           asiantuntijoilta sekä kerhon sisäisiä sijoituskilpailuja. Kerho on 
           avoin kaikille opiskelijoille taustasta riippumatta.
         </p>
-        <a href="hallitukset.html" class="btn-gold">Hallitukset ?</a>
+        <a href="hallitukset.html" class="btn-gold" data-i18n="about.btn">Hallitukset →</a>
       </div>
       <div class="about-image event-slider">
         <div class="slider-track">
@@ -117,7 +118,7 @@
       </div>
       <a href="https://t.me/+yEaAarXKp382ZDQ0" target="_blank" rel="noopener" class="footer-social-label">Winvest Telegram</a>
     </div>
-    <span class="footer-copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Winvest — Yliopiston Sijoituskerho</span>
   </footer>
 
   <script>
