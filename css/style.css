@@ -1732,7 +1732,7 @@ footer {
 
 .timeline-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(8, 8, 73, 0.08);
@@ -1813,6 +1813,21 @@ footer {
   image-rendering: auto;
   -ms-interpolation-mode: bicubic;
   backface-visibility: hidden;
+}
+
+.timeline-img-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 40%;
+  max-width: 400px;
+  flex-shrink: 0;
+  align-self: center;
+}
+.timeline-img-group .timeline-img {
+  width: 100%;
+  height: 200px;
+  object-position: center;
 }
 
 /* --- RESPONSIVE --- */
