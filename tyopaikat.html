@@ -26,6 +26,7 @@
       <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -72,7 +73,7 @@
           <span>Kesä 2026</span>
         </div>
         <div class="job-desc">Jos olet kokattu, aina on töitä.</div>
-        <a href="https://emp.jobylon.com/jobs/336463-mcdonalds-suomi-sommarjobbarekesatyontekija-mcdonalds-pietarsaari/" class="btn-gold" target="_blank" rel="noopener" data-i18n="jobs.apply">Hae paikkaa →</a>
+        <a href="http://mcdonalds.com/fi/fi-fi/mcdonalds/tyopaikat.html" class="btn-gold" target="_blank" rel="noopener" data-i18n="jobs.apply">Hae paikkaa →</a>
       </div>
 
     </div>
@@ -114,6 +115,12 @@
   </footer>
 
   <script>
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }

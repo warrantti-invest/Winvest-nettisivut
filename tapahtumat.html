@@ -26,6 +26,7 @@
       <li><a href="tapahtumat.html" class="active" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -47,6 +48,32 @@
     <h2 class="tapahtumat-heading" data-i18n="events.upcoming">Tulevat tapahtumat</h2>
 
     <div class="timeline">
+    </div>
+
+    <h2 class="tapahtumat-heading" data-i18n="events.past">Menneet tapahtumat</h2>
+
+    <div class="timeline">
+
+      <!-- 2026 -->
+      <div class="timeline-year">2026</div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h3>Excursio Helsinki <span class="lang-badge-fi">In Finnish</span> <span class="timeline-date">9.–10.4.2026</span></h3>
+            <h4>Mandatum</h4>
+            <p data-i18n="event.excu.hki.mandatum">Mandatumilla käsitellään markkinanäkymiä sekä sijoitustuotteita (strukturoidut, korko ja vaihtoehtoiset sijoitukset).</p>
+            <h4>Danske Bank</h4>
+            <p data-i18n="event.excu.hki.danske">Danske Bankilla tutustumme pankin Markets-toimintoihin, kuten Trade Financeen, Foreign Exchangeen, Equity Researchiin, Debt Capital Marketsiin sekä Corporate Lendingiin. Ohjelmaan kuuluu myös Markets-vierailu ja alumni-uratarinoita.</p>
+            <h4>Advium Corporate Finance</h4>
+            <p>Advium Corporate Financella tutustumme yrityskauppojen ja -järjestelyjen maailmaan sekä kuulemme neuvonantajan roolista M&A-transaktioissa. Erityisesti perehdymme kiinteistösijoittamiseen ja Real Estate -toimialaan.</p>
+            <h4>Varma</h4>
+            <p>Varmalla perehdymme työeläkevarojen sijoittamiseen ja kuulemme, miten Suomen suurimpia eläkevaroja hallinnoidaan vastuullisesti eri omaisuusluokissa.</p>
+          </div>
+          <img src="assets/Tapahtumat/helsinki.jpg" alt="Excursio Helsinki" class="timeline-img" />
+        </div>
+      </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
@@ -59,41 +86,6 @@
           <img src="assets/Tapahtumat/stock%26shots.jpg" alt="Stocks & Shots" class="timeline-img" />
         </div>
       </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-text">
-            <h3>Excursio Helsinki <span class="lang-badge-fi">In Finnish</span> <span class="timeline-date">9.4.2026</span></h3>
-            <h4>Mandatum</h4>
-            <p data-i18n="event.excu.hki.mandatum">Mandatumilla käsitellään markkinanäkymiä sekä sijoitustuotteita (strukturoidut, korko ja vaihtoehtoiset sijoitukset).</p>
-            <h4>Danske Bank</h4>
-            <p data-i18n="event.excu.hki.danske">Danske Bankilla tutustumme pankin Markets-toimintoihin, kuten Trade Financeen, Foreign Exchangeen, Equity Researchiin, Debt Capital Marketsiin sekä Corporate Lendingiin. Ohjelmaan kuuluu myös Markets-vierailu ja alumni-uratarinoita.</p>
-          </div>
-          <img src="assets/Tapahtumat/helsinki.jpg" alt="Excursio Helsinki" class="timeline-img" />
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-text">
-            <h3>Finance as a Career <span class="lang-badge-fi">In Finnish</span> <span class="timeline-date">16.4.2026</span></h3>
-            <p>testi 1</p>
-            <p>testi 2</p>
-          </div>
-          <img src="assets/Tapahtumat/espa.jpg" alt="Finance as a Career" class="timeline-img" />
-        </div>
-      </div>
-
-    </div>
-
-    <h2 class="tapahtumat-heading" data-i18n="events.past">Menneet tapahtumat</h2>
-
-    <div class="timeline">
-
-      <!-- 2026 -->
-      <div class="timeline-year">2026</div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
@@ -347,6 +339,12 @@
   </footer>
 
   <script>
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }

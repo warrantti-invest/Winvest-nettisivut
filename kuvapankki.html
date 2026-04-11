@@ -67,6 +67,7 @@
       <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -128,6 +129,34 @@
         </div>
       </div>
 
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Afterwork excursion 9.4.2026.jpg', 'Afterwork Excursio 9.4.2026')">
+        <img src="assets/Tapahtumat/Afterwork excursion 9.4.2026.jpg" alt="Afterwork Excursio 9.4.2026" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Afterwork Excursio 9.4.2026</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Danske_excu.jpg', 'Excursio — Danske Bank')">
+        <img src="assets/Tapahtumat/Danske_excu.jpg" alt="Excursio Danske Bank" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Excursio — Danske Bank</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Danskebank.jpg', 'Danske Bank')">
+        <img src="assets/Tapahtumat/Danskebank.jpg" alt="Danske Bank" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Danske Bank</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="excursio" onclick="openLightbox('assets/Tapahtumat/Excurso206Mandatum.jpg', 'Excursio — Mandatum 2026')">
+        <img src="assets/Tapahtumat/Excurso206Mandatum.jpg" alt="Excursio Mandatum 2026" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Excursio — Mandatum 2026</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -157,6 +186,12 @@
 
   <script>
     // Fade in observer
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }

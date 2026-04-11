@@ -26,6 +26,7 @@
       <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- HERO -->
@@ -39,7 +40,7 @@
         sijoittamisesta kiinnostuneet opiskelijat ja tarjoaa käytännön 
         osaamista rahoitusmaailmaan.
       </p>
-      <a href="hallitukset.html" class="btn-gold" data-i18n="hero.btn">Tutustu kerhoihin</a>
+      <a href="hallitukset.html" class="btn-gold" data-i18n="hero.btn">Tutustu hallitukseen</a>
     </div>
   </section>
 
@@ -92,6 +93,22 @@
             <img src="assets/Slaider/suomen-pankki.jpg" alt="Excursio Suomen Pankki" />
             <div class="slide-caption">Excursio — Suomen Pankki</div>
           </div>
+          <div class="slide">
+            <img src="assets/Tapahtumat/Afterwork excursion 9.4.2026.jpg" alt="Afterwork Excursio 9.4.2026" />
+            <div class="slide-caption">Afterwork Excursio 9.4.2026</div>
+          </div>
+          <div class="slide">
+            <img src="assets/Tapahtumat/Danske_excu.jpg" alt="Excursio Danske Bank" />
+            <div class="slide-caption">Excursio — Danske Bank</div>
+          </div>
+          <div class="slide">
+            <img src="assets/Tapahtumat/Danskebank.jpg" alt="Danske Bank" />
+            <div class="slide-caption">Danske Bank</div>
+          </div>
+          <div class="slide">
+            <img src="assets/Tapahtumat/Excurso206Mandatum.jpg" alt="Excursio Mandatum 2026" />
+            <div class="slide-caption">Excursio — Mandatum 2026</div>
+          </div>
         </div>
         <button class="slider-btn slider-prev" aria-label="Edellinen">‹</button>
         <button class="slider-btn slider-next" aria-label="Seuraava">›</button>
@@ -118,6 +135,30 @@
           <span class="article-card-link" data-i18n="press.kl.read">Lue artikkeli →</span>
         </div>
       </a>
+
+      <a href="https://www.uwasa.fi/fi/uutishuone/uutiset/vaasan-yliopiston-rahoituksen-maisteriopiskelijat-sijoittuivat-toiseksi" target="_blank" rel="noopener" class="article-card">
+        <div class="article-card-img">
+          <img src="assets/Tapahtumat/062_2024-02-15_CFA_RC_Final_R6_0237_web.jpg.jpeg" alt="CFA Research Challenge" />
+        </div>
+        <div class="article-card-body">
+          <span class="article-card-source">Vaasan yliopisto</span>
+          <h3 class="article-card-title">Vaasan yliopiston rahoituksen maisteriopiskelijat sijoittuivat toiseksi</h3>
+          <p class="article-card-desc">Vaasan yliopiston rahoituksen maisteriopiskelijat menestyivät erinomaisesti kansainvälisessä kilpailussa.</p>
+          <span class="article-card-link">Lue artikkeli →</span>
+        </div>
+      </a>
+
+      <a href="https://www.uwasa.fi/fi/uutishuone/uutiset/vaasan-yliopiston-rahoituksen-opiskelijat-voittivat-inderesin-analyysikilpailun-aloittavat-vuoden" target="_blank" rel="noopener" class="article-card">
+        <div class="article-card-img">
+          <img src="assets/svg/logo.svg" alt="Vaasan yliopisto — Winvest" />
+        </div>
+        <div class="article-card-body">
+          <span class="article-card-source">Vaasan yliopisto</span>
+          <h3 class="article-card-title">Vaasan yliopiston rahoituksen opiskelijat voittivat Inderesin analyysikilpailun</h3>
+          <p class="article-card-desc">Vaasan yliopiston rahoituksen opiskelijat menestyivät Inderesin analyysikilpailussa ja aloittavat vuoden voittajina.</p>
+          <span class="article-card-link">Lue artikkeli →</span>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -139,6 +180,12 @@
   </footer>
 
   <script>
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }

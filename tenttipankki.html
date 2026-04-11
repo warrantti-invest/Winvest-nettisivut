@@ -26,6 +26,7 @@
       <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" class="active" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -194,6 +195,12 @@
   </footer>
 
   <script>
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }

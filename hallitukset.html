@@ -26,6 +26,7 @@
       <li><a href="tapahtumat.html" data-i18n="nav.events">Tapahtumat</a></li>
       <li><a href="tenttipankki.html" data-i18n="nav.exams">Opinnot</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Valikko"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -51,8 +52,8 @@
           <div class="member-info"><div class="member-role" data-i18n="role.pj">Puheenjohtaja</div><div class="member-name">Ville Tenhunen</div></div>
         </div>
         <div class="board-member">
-          <div class="member-photo"><img src="assets/hallitus-2025/eero-tahvanainen.jpg" alt="Eero Tahvanainen" /></div>
-          <div class="member-info"><div class="member-role" data-i18n="role.vpj">Varapuheenjohtaja</div><div class="member-name">Eero Tahvanainen</div></div>
+          <div class="member-photo"><img src="assets/hallitus-2026/ropilo..jpg" alt="Meri-Tuuli Ropilo" /></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.vpj">Varapuheenjohtaja</div><div class="member-name">Meri-Tuuli Ropilo</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/niko-ammala.jpg" alt="Niko Ämmälä" /></div>
@@ -60,19 +61,19 @@
         </div>
         <div class="board-member">
           <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Jonatan Saariniemi</div></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Miika Nummela</div></div>
         </div>
         <div class="board-member">
-          <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Miika Nummela</div></div>
+          <div class="member-photo"><img src="assets/hallitus-2026/jonatan.jpg" alt="Jonatan Saariniemi" /></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Jonatan Saariniemi</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2026/tino-korjala.jpg" alt="Tino Korjala" /></div>
           <div class="member-info"><div class="member-role" data-i18n="role.it">IT-vastaava</div><div class="member-name">Tino Korjala</div></div>
         </div>
         <div class="board-member">
-          <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role" data-i18n="role.yrityss">Yrityssuhdevastaava</div><div class="member-name">Meri-Tuuli Ropilo</div></div>
+          <div class="member-photo"><img src="assets/hallitus-2025/alexandar-tadic.jpg" alt="Alexandar Tadic" /></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.yrityss">Yrityssuhdevastaava</div><div class="member-name">Alexandar Tadic</div></div>
         </div>
         <div class="board-member">
           <div class="member-photo"><img src="assets/hallitus-2025/inka-hanhimaki.jpg" alt="Inka Hanhimäki" /></div>
@@ -91,8 +92,8 @@
           <div class="member-info"><div class="member-role" data-i18n="role.jasen">Hallituksen jäsen</div><div class="member-name">Tuulia Nylander</div></div>
         </div>
         <div class="board-member">
-          <div class="member-photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <div class="member-info"><div class="member-role" data-i18n="role.excursio">Excursiovastaava</div><div class="member-name">Janne Lappi</div></div>
+          <div class="member-photo"><img src="assets/hallitus-2025/eero-tahvanainen.jpg" alt="Eero Tahvanainen" /></div>
+          <div class="member-info"><div class="member-role" data-i18n="role.excursio">Excursiovastaava</div><div class="member-name">Eero Tahvanainen</div></div>
         </div>
       </div>
     </div>
@@ -314,6 +315,12 @@
   </footer>
 
   <script>
+    // Hamburger menu
+    document.querySelector('.nav-hamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1 }
