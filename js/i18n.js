@@ -28,7 +28,7 @@
     /* ── INDEX ── */
     'hero.eyebrow': { fi: 'Yliopiston Sijoituskerho', en: 'University Investment Club' },
     'hero.sub': { fi: 'Winvest on yliopiston johtava sijoituskerho, joka yhdistää sijoittamisesta kiinnostuneet opiskelijat ja tarjoaa käytännön osaamista rahoitusmaailmaan.', en: 'Winvest is the leading university investment club, connecting students interested in investing and providing hands-on expertise in the world of finance.' },
-    'hero.btn': { fi: 'Tutustu kerhoihin', en: 'Explore the Club' },
+    'hero.btn': { fi: 'Tutustu tapahtumiin', en: 'Explore Events' },
     'stat.founded': { fi: 'Perustettu', en: 'Founded' },
     'stat.members': { fi: 'Jäsentä', en: 'Members' },
     'stat.years': { fi: 'Vuotta toiminnassa', en: 'Years Active' },

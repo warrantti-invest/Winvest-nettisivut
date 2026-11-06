@@ -2083,3 +2083,28 @@ footer {
   .timeline-img-group { width: 100%; max-width: none; }
   .timeline-img-group .timeline-img { height: 170px; }
 }
+
+/* Mobiilivalikko: nav:n backdrop-filter rajasi koko näytön valikon nav-palkin korkuiseksi */
+@media (max-width: 768px) {
+  nav:has(.nav-links.open) {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgb(5, 5, 48);
+  }
+  .nav-links { height: 100vh; height: 100dvh; background: rgb(5, 5, 48); }
+  .nav-hamburger { position: relative; }
+}
+
+/* Linkki tapahtumakortissa */
+.timeline-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+}
+.timeline-link:hover { border-bottom-color: var(--gold); }
